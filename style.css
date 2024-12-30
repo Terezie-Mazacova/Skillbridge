@@ -171,6 +171,10 @@
   text-align: center;
   padding-top: 3.125rem;
   border-top: 0.0625rem solid #F1F1F3;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #656567;
 }
 
 *, *::before, *::after {
@@ -182,4 +186,10 @@
 body {
   font-family: "Be Vietnam Pro", serif;
   background-color: #F7F7F8;
+}
+
+.container {
+  padding: 0 10.125rem;
+  max-width: 1860px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

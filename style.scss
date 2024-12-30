@@ -17,3 +17,7 @@ body {
     font-family: "Be Vietnam Pro", serif;
     background-color: $white-97;
 }
+
+.container {
+    @include centered-container;
+}

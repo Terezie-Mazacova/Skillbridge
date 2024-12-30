@@ -100,6 +100,10 @@
             text-align: center;
             padding-top: 3.125rem;
             border-top: .0625rem solid $white-95;
+            @include text-small;
+            font-weight: 400;
+            line-height: $line-height;
+            color: $grey-40;
         }
     }
 }

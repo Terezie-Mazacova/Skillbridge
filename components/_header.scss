@@ -1,0 +1,114 @@
+// == HEADER ==
+.header-content {
+    text-align: center;
+    @include centered-container;
+    padding-top: 1.25rem;
+    
+
+    // == PROMO BAR ==
+    .announcement-bar {
+        background-color: $orange-50;
+        border-radius: $radius-8;
+        padding: .875rem 0;
+
+        .announcement-link {
+            display: flex;
+            gap: 1.4375rem;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            text-decoration: none;
+
+            .promo-text {
+                @include text-small;
+                font-weight: 400;
+                line-height: $line-height;
+            }
+
+            .announcement-icon {
+                width: 1.5rem;
+                height: 1.5rem;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            &:hover .announcement-icon {
+                transform: translateX(.25rem);
+            }
+        }
+    }
+
+    // == NAV AND LOGO ==
+    .branding-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1.25rem 0;
+        border-bottom: .0625rem solid $white-95;
+
+        .nav-actions {
+            display: flex;
+            gap: 3.125rem;
+            align-items: center;
+            
+
+            .main-nav {
+                ul {
+                    display: flex;
+
+                    li {
+                        list-style-type: none;
+
+                        a {
+                            text-decoration: none;
+                            @include text-small;
+                            font-weight: 400;
+                            line-height: $line-height;
+                            color: $grey-15;
+                            padding: .875rem 1.5rem;
+                            transition: background-color 0.3s;
+
+                            &:hover {
+                                border-radius: $radius-8;
+                                background-color: $white-95;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .auth-buttons {
+            .auth-buttons__button {
+                @include text-small;
+                font-weight: 400;
+                line-height: $line-height;
+                text-decoration: none;
+            }
+
+            .auth-buttons__button--sign {
+                padding: .875rem 1.5rem;
+                margin-right: .5rem;
+                color: $grey-15;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    border-radius: $radius-8;
+                    background-color: $white-95;
+                }
+            }
+
+            .auth-buttons__button--login {
+                color: $white;
+                background-color: $orange-50;
+                padding: .875rem 2.125rem;
+                border-radius: $radius-8;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: $orange-70;
+                }
+            }
+        }
+    }
+}
+

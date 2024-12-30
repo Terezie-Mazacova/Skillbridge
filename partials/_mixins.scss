@@ -32,3 +32,10 @@
     font-size: 1.125rem;
 }
 
+// == OTHER ==
+@mixin centered-container {
+    padding: 0 10.125rem;
+    max-width: 1860px;
+    margin: 0 auto;
+}
+

@@ -1,0 +1,105 @@
+// == FOOTER ==
+.footer {
+    background-color: $white;
+
+    .footer-wrapper {
+        @include centered-container;
+        padding-top: 6.25rem;
+        padding-bottom: 1.875rem;
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 3.125rem;
+    
+            .footer-contact-container {
+                .footer-contact {
+                    margin-top: 2.5rem;
+    
+                    .footer-contact-item {
+                        display: flex;
+                        text-decoration: none;
+                        font-style: normal;
+                        margin-bottom: 1.25rem;
+    
+                        .footer-icon {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            margin-right: .375rem;
+                            color: $grey-15;
+                        }
+    
+                        .contact-item {
+                            @include text-small;
+                            font-weight: 400;
+                            line-height: $line-height;
+                            color: $grey-15;
+                        }
+    
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+    
+            .footer-nav {
+                display: flex;
+                justify-content: space-between;
+                width: 50.4375rem;
+    
+                .footer-nav-column {
+                    .footer-nav-title {
+                        @include text-medium;
+                        font-weight: 600;
+                        line-height: $line-height;
+                        color: $grey-15;
+                        margin-bottom: .875rem;
+                    }
+    
+                    ul {
+                        li {
+                            list-style-type: none;
+                            margin-bottom: .5rem;
+    
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+    
+                            a {
+                                text-decoration: none;
+                                @include text-small;
+                                font-weight: 400;
+                                line-height: $line-height;
+                                color: $grey-35;
+                                
+                            }
+                        }
+                    }
+    
+                    .footer-socials {
+                        display: flex;
+    
+                        .footer-social-link {
+                            background-color: $white-97;
+                            border: .0625rem solid $white-95;
+                            margin-right: .625rem;
+                            padding: .875rem;
+                            border-radius: $radius-8;
+    
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-copyright {
+            text-align: center;
+            padding-top: 3.125rem;
+            border-top: .0625rem solid $white-95;
+        }
+    }
+}

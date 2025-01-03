@@ -246,7 +246,7 @@
   color: #FFF;
   font-weight: 600;
   margin-right: 0.75rem;
-  transition: background-color 0.3s;
+  sition: tran background-color 0.3s;
 }
 .hero-content .hero-header .hero-btns .hero-btn--primary:hover {
   background-color: #FFBF66;
@@ -370,6 +370,120 @@
   color: #FF9500;
   width: 2.125rem;
   height: 2.125rem;
+}
+
+.section-courses {
+  margin-bottom: 7.5rem;
+}
+.section-courses .header-courses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.section-courses .header-courses h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #262626;
+  margin-bottom: 0.375rem;
+}
+.section-courses .header-courses p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #59595A;
+  max-width: 73.5625rem;
+}
+.section-courses .header-courses .courses-btn {
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 150%;
+  color: #262626;
+  background-color: #FCFCFD;
+  border: 0.0625rem solid #F1F1F3;
+  border-radius: 0.5rem;
+  padding: 1.125rem 1.5rem;
+  transition: background-color 0.3s;
+}
+.section-courses .header-courses .courses-btn:hover {
+  background-color: #F1F1F3;
+  border: 0.0625rem solid #FCFCFD;
+}
+.section-courses .courses-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.875rem;
+}
+.section-courses .courses-list .course-card {
+  background-color: #FFF;
+  border: 0.0625rem solid #F1F1F3;
+  border-radius: 0.75rem;
+  padding: 3.125rem;
+}
+.section-courses .courses-list .course-card .course-image {
+  width: 100%;
+}
+.section-courses .courses-list .course-card .course-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.875rem 0;
+}
+.section-courses .courses-list .course-card .course-info .course-details {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #4C4C4D;
+}
+.section-courses .courses-list .course-card .course-info .course-details span {
+  padding: 0.625rem 1rem;
+  background-color: #FFF;
+  border: 0.0625rem solid #F1F1F3;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+.section-courses .courses-list .course-card .course-info .course-details .course-duration {
+  margin-right: 10px;
+}
+.section-courses .courses-list .course-card .course-info .course-instructor {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #262626;
+  display: inline-block;
+}
+.section-courses .courses-list .course-card .course-description {
+  margin-bottom: 1.875rem;
+}
+.section-courses .courses-list .course-card .course-description h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #262626;
+  margin-bottom: 0.875rem;
+}
+.section-courses .courses-list .course-card .course-description p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #4C4C4D;
+}
+.section-courses .courses-list .course-card .course-link {
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #262626;
+  text-decoration: none;
+  padding: 1.125rem 1.5rem;
+  background-color: #F7F7F8;
+  border: 0.0625rem solid #F1F1F3;
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+.section-courses .courses-list .course-card .course-link:hover {
+  background-color: #FCFCFD;
 }
 
 *, *::before, *::after {

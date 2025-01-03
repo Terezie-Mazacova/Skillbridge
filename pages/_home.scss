@@ -1,7 +1,7 @@
 // == HERO SECTION ==
 .hero-content {
     margin-top: 6.25rem;
-    margin-bottom: 9.375rem;
+    margin-bottom: 7.5rem;
 
     .hero-header {
         display: flex;
@@ -128,5 +128,103 @@
     .hero-image {
         width: 100%;
         border-radius: $radius-12;
+    }
+}
+
+// == BENEFITS SECTION ==
+.benefits-section {
+    margin-bottom: 7.5rem;
+
+    .benefits-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5rem;
+
+        h2 {
+            @include heading;
+            font-weight: 600;
+            line-height: $line-height;
+            color: $grey-15;
+            margin-bottom: .375rem;
+        }
+
+        p {
+            @include text-small;
+            font-weight: 400;
+            line-height: $line-height;
+            color: $grey-35;
+            max-width: 73.5625rem;
+        }
+
+        .benefits-btn {
+            text-decoration: none;
+            font-weight: 400;
+            line-height: $line-height;
+            color: $grey-15;
+            background-color: $white-99;
+            border: .0625rem solid $white-95;
+            border-radius: $radius-8;
+            padding: 1.125rem 1.5rem;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $white-95;
+                border: .0625rem solid $white-99;
+            }
+        }
+    }
+
+    .benefits-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+
+        .benefit-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            background-color: $white;
+            border-radius: $radius-12;
+            padding: 3.125rem;
+
+            .benefit-number {
+                @include text-huge;
+                font-weight: 700;
+                color: $grey-15;
+            }
+
+            .benefit-content {
+                margin: 3.125rem 0 3.125rem 0;
+
+                h3 {
+                    @include text-large;
+                    font-weight: 600;
+                    line-height: $line-height;
+                    color: $grey-20;
+                    margin-bottom: .875rem;
+                }
+
+                p {
+                    @include text-small;
+                    font-weight: 400;
+                    line-height: $line-height;
+                    color: $grey-30;
+                }
+            }
+
+            .benefit-icon {
+                padding: 1.25rem;
+                background-color: $white-99;
+                border: .0625rem solid $white-95;
+                border-radius: $radius-8;
+
+                .benefit-icon-svg {
+                    color: $orange-50;
+                    width: 2.125rem;
+                    height: 2.125rem;
+                }
+            }
+        }
     }
 }

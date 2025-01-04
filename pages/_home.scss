@@ -78,7 +78,7 @@
                 color: $white;
                 font-weight: 600;
                 margin-right: .75rem;
-                sition:tran background-color 0.3s;
+                transition: background-color 0.3s;
 
                 &:hover {
                     background-color: $orange-70;
@@ -287,6 +287,7 @@
 
             .course-image {
                 width: 100%;
+                border-radius: $radius-8;
             }
 
             .course-info {
@@ -357,6 +358,115 @@
 
                 &:hover {
                     background-color: $white-99;
+                }
+            }
+        }
+    }
+}
+
+// == OUR TESTIMONIALS SECTION ==
+.section-testimonials {
+    margin-bottom: 7.5rem;
+
+    .header-testimonials {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5rem;
+
+        h2 {
+            @include heading;
+            font-weight: 600;
+            line-height: $line-height;
+            color: $grey-15;
+            margin-bottom: .375rem;
+        }
+
+        p {
+            @include text-small;
+            font-weight: 400;
+            line-height: $line-height;
+            color: $grey-35;
+            max-width: 73.5625rem;
+        }
+
+        .testimonials-btn {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 400;
+            line-height: $line-height;
+            color: $grey-15;
+            background-color: $white-99;
+            border: .0625rem solid $white-95;
+            border-radius: $radius-8;
+            padding: 1.125rem 1.5rem;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $white-95;
+                border: .0625rem solid $white-99;
+            }
+        }
+    }
+
+    .testimonials-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+
+        .testimonial-card {
+            background-color: $white;
+            border: .0625rem solid $white-95;
+            border-radius: $radius-12;
+
+            .testimonial-quote {
+                padding: 3.125rem;
+                border-bottom: .0625rem solid $white-95;
+
+                p {
+                    @include text-small;
+                    font-weight: 400;
+                    line-height: $line-height;
+                    color: $grey-30;
+                }
+            }
+
+            .testimonial-author-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.875rem 3.125rem;
+                background-color: $white-99;
+                border-bottom-right-radius: $radius-12;
+                border-bottom-left-radius: $radius-12;
+
+                .testimonial-meta {
+                    display: flex;
+                    align-items: center;
+                    gap: .9375rem;
+
+                    .testimonial-avatar {
+                        border-radius: $radius-8;
+                    }
+
+                    .testimonial-author {
+                        @include text-small;
+                        font-weight: 600;
+                        line-height: $line-height;
+                        color: $grey-20;
+                    }
+                }
+
+                .btn-read-more {
+                    @include text-small;
+                    font-weight: 500;
+                    line-height: $line-height;
+                    color: $grey-15;
+                    text-decoration: none;
+                    padding: 1.125rem 1.5rem;
+                    background-color: $white-97;
+                    border: .0625rem solid $white-95;
+                    border-radius: $radius-8;
                 }
             }
         }

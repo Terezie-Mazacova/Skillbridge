@@ -412,7 +412,7 @@
     .testimonials-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.25rem;
+        gap: 1.875rem;
 
         .testimonial-card {
             background-color: $white;

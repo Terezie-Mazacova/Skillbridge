@@ -596,4 +596,167 @@ body {
   padding: 0 10.125rem;
   max-width: 1860px;
   margin: 0 auto;
+}
+
+.section-pricing {
+  position: relative;
+  margin-bottom: 7.5rem;
+}
+.section-pricing .header-pricing {
+  margin-bottom: 5rem;
+}
+.section-pricing .header-pricing h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #262626;
+  margin-bottom: 0.375rem;
+}
+.section-pricing .header-pricing p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #59595A;
+  max-width: 50rem;
+}
+.section-pricing .pricing-tabs [data-tab-content] {
+  display: none;
+}
+.section-pricing .pricing-tabs .active[data-tab-content] {
+  display: block;
+}
+.section-pricing .pricing-tabs .tabs-list {
+  display: flex;
+  list-style-type: none;
+  background-color: #FFF;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  max-width: 17rem;
+  cursor: pointer;
+  position: absolute;
+  top: 3%;
+  right: 0;
+}
+.section-pricing .pricing-tabs .tabs-list .tab {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #4C4C4D;
+  padding: 0.875rem 1.875rem;
+}
+.section-pricing .pricing-tabs .tabs-list .tab.active {
+  background-color: #FF9500;
+  border-radius: 0.375rem;
+  color: #FFF;
+}
+.section-pricing .pricing-tabs .tabs-content {
+  background-color: #FFF;
+  padding: 5rem;
+  border-radius: 0.75rem;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper {
+  display: flex;
+  gap: 1.875rem;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card {
+  background-color: #FCFCFD;
+  border: 0.0625rem solid #F1F1F3;
+  border-radius: 0.75rem;
+  padding: 3.125rem 1.875rem 1.875rem 1.875rem;
+  width: 50%;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-header {
+  background-color: #FFF9F0;
+  border: 0.0625rem solid #FFEACC;
+  padding: 0.75rem 1.375rem;
+  border-radius: 0.375rem;
+  margin-bottom: 3.125rem;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-header h3 {
+  text-align: center;
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 169%;
+  color: #262626;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-price {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #4C4C4D;
+  text-align: center;
+  margin-bottom: 3.125rem;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-price .plan-price-span {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #262626;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-features {
+  background-color: #FFF;
+  padding: 2.5rem;
+  border: 0.0625rem solid #F1F1F3;
+  border-top-left-radius: 0.875rem;
+  border-top-right-radius: 0.875rem;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-features .features-heading {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #262626;
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-features .feature-item {
+  list-style-type: none;
+  margin-bottom: 1.25rem;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-features .feature-item:last-child {
+  margin-bottom: 0;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-features .feature-item .feature-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem;
+  border: 0.0625rem solid #F1F1F3;
+  border-radius: 0.5rem;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-features .feature-item .feature-content .feature-icon {
+  display: flex;
+  background-color: #FFF4E5;
+  border-radius: 0.375rem;
+  padding: 0.375rem;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-features .feature-item .feature-content .feature-icon .feature-icon-svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #262626;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-features .feature-item .feature-content .feature-icon-x {
+  background-color: transparent;
+  border: 0.0625rem solid #F1F1F3;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-features .feature-item .feature-content .feature-text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #4C4C4D;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #FFF;
+  padding: 1.375rem 1.5rem;
+  background-color: #FF9500;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-btn:hover {
+  background-color: #FFBF66;
 }/*# sourceMappingURL=style.css.map */

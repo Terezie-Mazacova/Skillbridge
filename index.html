@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="./img/icons/skillbrigde-logo.svg">
+    <link rel="shortcut icon" href="./img/icons/desktop-logo-skillbridge.svg">
     <link rel="stylesheet" href="style.css">
     <title>Skillbridge</title>
 </head>
@@ -22,7 +22,7 @@
             <!-- PROMO BAR -->
             <section class="announcement-bar" aria-label="Promotion">
                 <a href="#" class="announcement-link">
-                    <span class="promo-text">Free Courses &#127775 Sale Ends Soon – Get It Now</span>
+                    <span class="promo-text">Free Courses &#127775 Sale Ends Soon, Get It Now</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="announcement-icon">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
@@ -33,7 +33,14 @@
             <div class="branding-nav">
                 <div class="nav-actions">
                     <a href="index.html" class="nav-logo">
-                        <img src="./img/icons/skillbrigde-logo.svg" alt="Logo Skillbridge">
+                        <!-- FOR DESKTOP -->
+                        <img src="./img/icons/desktop-logo-skillbridge.svg" alt="Logo Skillbridge" class="desktop-logo">
+
+                        <!-- FOR LAPTOP -->
+                        <img src="./img/icons/laptop-logo-skillbridge.svg" alt="Logo Skillbridge" class="laptop-logo">
+
+                        <!-- FOR MOBILE -->
+                        <img src="./img/icons/mobile-logo-skillbridge.svg" alt="Logo Skillbridge" class="mobile-logo">
                     </a>
 
                     <nav class="main-nav">
@@ -47,10 +54,29 @@
                     </nav>
                 </div>
 
-                <div class="auth-buttons">
-                    <a href="#" class="auth-buttons__button auth-buttons__button--sign">Sign Up</a>
-
-                    <a href="#" class="auth-buttons__button auth-buttons__button--login">Login</a>
+                <div class="btns-container">
+                    <div class="auth-buttons">
+                        <a href="#" class="auth-buttons__button auth-buttons__button--sign">Sign Up</a>
+    
+                        <a href="#" class="auth-buttons__button auth-buttons__button--login">Login</a>
+                    </div>
+    
+                    <!--Hamburger button-->
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+    
+    
+                    <!--Hamburger menu-->
+                    <nav class="mobile-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>

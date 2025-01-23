@@ -76,38 +76,220 @@
             }
         }
 
-        .auth-buttons {
-            .auth-buttons__button {
-                @include text-small;
-                font-weight: 400;
-                line-height: $line-height;
-                text-decoration: none;
-            }
+        .btns-container {
+            display: flex;
 
-            .auth-buttons__button--sign {
-                padding: .875rem 1.5rem;
-                margin-right: .5rem;
-                color: $grey-15;
-                transition: background-color 0.3s;
-
-                &:hover {
+            .auth-buttons {
+                .auth-buttons__button {
+                    @include text-small;
+                    font-weight: 400;
+                    line-height: $line-height;
+                    text-decoration: none;
+                    display: inline-block;
+                    white-space: nowrap;
+                }
+    
+                .auth-buttons__button--sign {
+                    padding: .875rem 1.5rem;
+                    margin-right: .5rem;
+                    color: $grey-15;
+                    transition: background-color 0.3s;
+    
+                    &:hover {
+                        border-radius: $radius-8;
+                        background-color: $white-95;
+                    }
+                }
+    
+                .auth-buttons__button--login {
+                    color: $white;
+                    background-color: $orange-50;
+                    padding: .875rem 2.125rem;
                     border-radius: $radius-8;
-                    background-color: $white-95;
+                    transition: background-color 0.3s;
+    
+                    &:hover {
+                        background-color: $orange-70;
+                    }
                 }
             }
+    
+    
+            // == HAMBURGER MENU 
+            .hamburger {
+                position: relative;
+                display: block;
+                width: 2.1875rem;
+                cursor: pointer;
+                appearance: none;
+                background: none;
+                outline: none;
+                border: none;
+                z-index: 100;
+    
+                .bar,
+                &:after,
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: .3125rem;
+                    background-color: $grey-15;
+                    margin: .375rem 0;
+                    transition: 0.4s;
+                    left: 0;
+                    border-radius: $radius-8;
+                }
+    
+                &.is-active:before {
+                    transform: rotate(-45deg) translate(-0.5rem, .375rem);
+                }
+                &.is-active:after {
+                    transform: rotate(45deg) translate(-0.5625rem, -0.5rem);
+                }
+                &.is-active .bar {
+                    opacity: 0;
+                }
+            }
+    
+            .mobile-nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                z-index: 20;
+                background-color: $white;
+                transition: 1s;
+                padding: 9.375rem 1.25rem 0 1.25rem;
+                white-space: nowrap;
+    
+                &.is-active {
+                    right: 0;
+                }
+    
+                ul {
+                    li {
+                        list-style-type: none;
+                        a {
+                            display: block;
+                            width: 100%;
+                            max-width: 12.5rem;
+                            @include text-small;
+                            font-weight: 400;
+                            line-height: $line-height;
+                            color: $grey-15;
+                            padding: .875rem 1.5rem;
+                            transition: background-color 0.3s;
+                            margin: 0 auto;
+                            text-decoration: none;
+                            text-transform: uppercase;
 
-            .auth-buttons__button--login {
-                color: $white;
-                background-color: $orange-50;
-                padding: .875rem 2.125rem;
-                border-radius: $radius-8;
-                transition: background-color 0.3s;
-
-                &:hover {
-                    background-color: $orange-70;
+                            &:hover {
+                                border-radius: $radius-8;
+                                background-color: $white-95;
+                            }
+                        }
+                    }
+                    
                 }
             }
         }
     }
 }
+
+
+
+
+// == BREAKPOINTY ==
+@media screen and (max-width: 400px) {
+    // == PROMO BAR ==
+    .announcement-bar {
+        padding: .875rem 1rem !important;
+
+        .promo-text {
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav-actions {
+        .nav-logo {
+            .laptop-logo {
+                display: none;
+            }
+        }
+    }
+
+    .btns-container {
+        .auth-buttons__button {
+            padding: .75rem !important;
+            margin: 0 !important;
+        }
+        .auth-buttons__button--login {
+            padding: .75rem 1.5rem !important;
+        }
+
+        .mobile-nav {
+            width: 100% !important;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nav-logo {
+        .laptop-logo {
+            display: none;
+        }
+    }
+
+    .btns-container {
+        .hamburger {
+            display: none !important;
+        }
+    
+        .mobile-nav {
+            display: none !important;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1439px) {
+    // == NAV A LOGO ==
+    .branding-nav {
+        justify-content: space-between !important;
+
+        .nav-actions {
+            .nav-logo {
+                .desktop-logo {
+                    display: none;
+                }
+            }
+            .main-nav {
+                display: none;
+            }
+        }
+
+        .btns-container {
+            gap: 1.25rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .header-content {
+        padding-top: 2.5rem !important;
+    }
+}
+
 

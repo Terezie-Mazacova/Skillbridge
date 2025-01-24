@@ -21,6 +21,7 @@
                         text-decoration: none;
                         font-style: normal;
                         margin-bottom: 1.25rem;
+                        align-items: center;
     
                         .footer-icon {
                             width: 1.5rem;
@@ -72,7 +73,6 @@
                                 font-weight: 400;
                                 line-height: $line-height;
                                 color: $grey-35;
-                                
                             }
                         }
                     }
@@ -81,6 +81,7 @@
                         display: flex;
     
                         .footer-social-link {
+                            display: flex;
                             background-color: $white-97;
                             border: .0625rem solid $white-95;
                             margin-right: .625rem;
@@ -105,5 +106,122 @@
             line-height: $line-height;
             color: $grey-40;
         }
+    }
+}
+
+
+// == BREAKPOINTY ==
+@media screen and (max-width: 767px) {
+    .footer-laptop-logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-mobile-logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .footer {
+        .footer-wrapper {
+            .footer-content {
+                flex-direction: column;
+        
+                .footer-contact {
+                    margin-top: 1.875rem !important;
+        
+                    .footer-contact-item {
+                        margin-bottom: .75rem !important;
+        
+                        &:last-child {
+                            margin-bottom: 0 !important;
+                        }
+                    }
+                }
+        
+                .footer-nav {
+                    display: grid !important;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 1.5rem;
+                    width: 100% !important;
+                    margin-top: 1.5rem;
+        
+                    .footer-nav-column {
+                        .footer-nav-title {
+                            margin-bottom: .625rem !important;
+                            @include text-small;
+                        }
+        
+                        ul {
+                            li {
+                                margin-bottom: .25rem !important;
+                            }
+                        }
+        
+                        &:nth-child(1),
+                        &:nth-child(2) {
+                            grid-column: span 1;
+                        }
+        
+                        &:nth-child(3) {
+                            grid-column: span 2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .footer-content {
+        justify-content: flex-end;
+        gap: 3.75rem;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .footer-wrapper {
+        padding-top: 3.125rem !important;
+        padding-bottom: 1.5rem !important;
+
+        .footer-content {
+            padding-bottom: 1.25rem !important;
+        }
+
+        .footer-copyright {
+            padding-top: 1.25rem !important;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+    .footer-wrapper {
+        padding-top: 3.75rem !important;
+        padding-bottom: 1.25rem !important;
+
+        .footer-content {
+            padding-bottom: 1.875rem !important;
+        }
+
+        .footer-copyright {
+            padding-top: 1.875rem !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .footer-desktop-logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer-laptop-logo {
+        display: none;
     }
 }

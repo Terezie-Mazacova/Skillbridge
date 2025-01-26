@@ -33,7 +33,7 @@
             }
 
             .hero-title {
-                @include heading;
+                @include h1-main;
                 font-weight: 600;
                 line-height: $line-height;
                 color: $grey-10;
@@ -53,6 +53,7 @@
                 line-height: $line-height;
                 color: $grey-15;
                 margin-bottom: .625rem;
+                text-align: center;
             }
 
             p {
@@ -71,6 +72,7 @@
                 @include text-small;
                 line-height: $line-height;
                 text-decoration: none;
+                display: inline-block;
             }
 
             .hero-btn--primary {
@@ -470,5 +472,72 @@
                 }
             }
         }
+    }
+}
+
+
+// == BREAKPOINTY ==
+@media screen and (max-width: 480px) {
+    // == HERO SECTION ==
+    .hero-btn--primary {
+        margin-right: 0 !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    // == HERO SECTION ==
+    .hero-icon {
+        padding: .75rem !important;
+    }
+
+    .hero-subtitle {
+        margin-bottom: 3.125rem !important;
+    }
+
+    .hero-btns {
+        .hero-btn {
+            padding: .875rem 1.25rem !important;
+        }
+    }
+
+    .hero-slider-wrapper {
+        margin: 1.875rem 0 !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .hero-slider-wrapper {
+        margin: 3.125rem 0 !important;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    // == HERO SECTION ==
+    .hero-content {
+        margin: 3.125rem 0;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    // == HERO SECTION == 
+    .hero-content {
+        margin: 6.25rem 0;
+
+        .hero-slider-wrapper {
+            margin: 5rem 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .logos-desktop {
+        display: none !important;
+    }
+}
+
+
+@media screen and (min-width: 1440px) and (max-width: 1500px) {
+    .logo-desktop-container {
+        padding: 1.25rem 1.875rem !important;
     }
 }

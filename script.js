@@ -15,20 +15,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
     splides.forEach(function (splideElement) {
         new Splide(splideElement, {
-        perPage: 3,
-        gap: '30px',
+        perPage: 5,
         pagination: false,
-        arrows: true,
+        arrows: false,
         type: 'loop',
+        autoplay: true,
+        interval: 1000,
+        speed: 500000,
         breakpoints: {
             1280: {
-            perPage: 2,
-            gap: '20px',
+                perPage: 4,
             },
             
             1023: {
-            perPage: 1,
+                perPage: 3,
             },
+
+            767: {
+                perPage: 2,
+            },
+
+            480: {
+                perPage: 1
+            }
         },
         }).mount();
     });

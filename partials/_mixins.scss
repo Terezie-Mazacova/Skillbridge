@@ -1,4 +1,21 @@
 // == HEADINGS ==
+@mixin h1-main {
+    font-size: 3rem;
+
+    @media (max-width: 767px) {
+        font-size: 1rem;
+    }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+        font-size: 1.5rem;
+    }
+
+    @media (min-width: 1280px) and (max-width: 1440px) {
+        font-size: 36px;
+    }
+}
+
+
 @mixin heading {
     font-size: 3rem;
 }
@@ -14,6 +31,14 @@
 
 @mixin text-xlarge {
     font-size: 2.375rem;
+
+    @media (max-width: 1279px) {
+        font-size: 1.5rem;
+    }
+
+    @media (min-width: 1280px) and (max-width: 1440px) {
+        font-size: 28px;
+    }
 }
 
 @mixin text-large {

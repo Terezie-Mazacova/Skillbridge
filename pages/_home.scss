@@ -263,7 +263,9 @@
         }
 
         .courses-btn {
+            display: inline-block;
             text-decoration: none;
+            @include text-small;
             font-weight: 400;
             line-height: $line-height;
             color: $grey-15;
@@ -272,6 +274,8 @@
             border-radius: $radius-8;
             padding: 1.125rem 1.5rem;
             transition: background-color 0.3s;
+            margin-left: 1.875rem;
+            white-space: nowrap;
 
             &:hover {
                 background-color: $white-95;
@@ -533,6 +537,32 @@
             }
         }
     }
+
+    // == OUR COURSES SECTION == 
+    .header-courses {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 1.25rem;
+
+        h2 {
+            margin-bottom: .25rem !important;
+        }
+
+        .courses-btn {
+            margin-left: 0 !important;
+            padding: .875rem 1.25rem !important;
+        }
+    }
+
+    .course-details {
+        span {
+            padding: .5rem .875rem !important;
+        }
+    }
+
+    .course-link {
+        padding: 14px 1.5rem !important;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -576,6 +606,34 @@
             }
         }
     }
+
+    // == OUR COURSES SECTION ==
+    .section-courses {
+        margin-bottom: 3.125rem;
+
+        .header-courses {
+            margin-bottom: 2.5rem !important;
+        }
+    
+        .courses-list {
+            grid-template-columns: repeat(1, 1fr) !important;
+    
+            .course-card {
+                padding: 1.5rem !important;
+    
+                .course-info {
+                    margin: 1.5rem 0 !important;
+                }
+    
+                .course-description {
+                    margin-bottom: 1.5rem !important;
+                    h3 {
+                        margin-bottom: .625rem !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -606,11 +664,33 @@
             }
         }
     }
+
+    // == OUR COURSES SECTION ==
+    .section-courses {
+        margin-bottom: 6.25rem;
+
+        .header-courses {
+            margin-bottom: 3.75rem !important;
+        }
+    
+        .course-card {
+            padding: 2.5rem !important;
+        }
+    }
 }
 
 @media screen and (max-width: 1439px) {
     .logos-desktop {
         display: none !important;
+    }
+}
+
+
+@media screen and (max-width: 1279px) {
+    .course-info {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: .875rem;
     }
 }
 

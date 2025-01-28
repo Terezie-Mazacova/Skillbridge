@@ -11,7 +11,7 @@
     }
 
     @media (min-width: 1280px) and (max-width: 1440px) {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 }
 
@@ -20,7 +20,7 @@
     font-size: 3rem;
 
     @media (max-width: 767px) {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 }
 
@@ -29,11 +29,11 @@
     font-size: 5rem;
 
     @media (max-width: 1023px) {
-        font-size: 50px;
+        font-size: 3.125rem;
     }
 
     @media (min-width: 1024px) and (max-width: 1440px) {
-        font-size: 60px;
+        font-size: 3.75rem;
     }
 }
 
@@ -49,7 +49,7 @@
     }
 
     @media (min-width: 1280px) and (max-width: 1440px) {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 }
 
@@ -57,7 +57,7 @@
     font-size: 1.5rem;
 
     @media (max-width: 767px) {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
@@ -67,6 +67,10 @@
 
 @mixin text-medium {
     font-size: 1.25rem;
+
+    @media (max-width: 767px) {
+        font-size: 1rem;
+    }
 }
 
 @mixin text-small {

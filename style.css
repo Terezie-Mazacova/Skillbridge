@@ -1379,6 +1379,11 @@ body {
   line-height: 169%;
   color: #262626;
 }
+@media (max-width: 767px) {
+  .section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-header h3 {
+    font-size: 1rem;
+  }
+}
 .section-pricing .pricing-tabs .tabs-content .plans-wrapper .plan-card .plan-price {
   font-size: 1.25rem;
   font-weight: 500;
@@ -1669,4 +1674,85 @@ body {
   width: 1.75rem;
   height: 1.75rem;
   color: #262626;
+}
+
+@media screen and (max-width: 400px) {
+  .feature-content {
+    align-items: flex-start !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-pricing h2 {
+    margin-bottom: 0.25rem !important;
+  }
+  .tab {
+    padding: 0.75rem 1.5rem !important;
+  }
+  .plan-btn {
+    padding: 1.125rem 1.5rem !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .section-pricing {
+    margin-bottom: 3.125rem;
+  }
+  .section-pricing .header-pricing {
+    margin-bottom: 2.5rem;
+  }
+  .section-pricing .tabs-content {
+    padding: 1.25rem !important;
+  }
+  .section-pricing .tabs-content .plans-wrapper {
+    flex-direction: column;
+  }
+  .section-pricing .tabs-content .plans-wrapper .plan-card {
+    width: 100% !important;
+  }
+  .section-pricing .tabs-content .plan-card {
+    padding: 1.875rem 1.25rem 1.25rem 1.25rem !important;
+  }
+  .section-pricing .tabs-content .plan-card .plan-header {
+    padding: 0.5rem 1.375rem !important;
+    margin-bottom: 1.875rem !important;
+  }
+  .section-pricing .tabs-content .plan-card .plan-price {
+    margin-bottom: 1.875rem !important;
+  }
+  .section-pricing .tabs-content .plan-card .plan-features {
+    padding: 1.25rem !important;
+  }
+  .section-pricing .tabs-content .plan-card .plan-features .features-heading {
+    margin-bottom: 1.25rem !important;
+  }
+  .section-pricing .tabs-content .plan-card .plan-features .feature-content {
+    padding: 0.75rem !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .section-pricing {
+    margin-bottom: 6.25rem;
+  }
+  .section-pricing .header-pricing {
+    margin-bottom: 3.75rem;
+  }
+  .section-pricing .tabs-content {
+    padding: 3.125rem !important;
+  }
+  .section-pricing .tabs-content .plan-card {
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem !important;
+  }
+  .section-pricing .tabs-content .plan-card .plan-features {
+    padding: 1.875rem !important;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .pricing-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .pricing-tabs .tabs-list {
+    position: unset !important;
+  }
 }/*# sourceMappingURL=style.css.map */

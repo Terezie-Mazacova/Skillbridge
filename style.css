@@ -1520,7 +1520,7 @@ body {
   }
 }
 .section-faq .header-faq p,
-.section-faq .header-faq a {
+.section-faq .header-faq .header-faq-link {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 150%;
@@ -1530,20 +1530,21 @@ body {
 }
 @media (max-width: 767px) {
   .section-faq .header-faq p,
-  .section-faq .header-faq a {
+  .section-faq .header-faq .header-faq-link {
     font-size: 0.875rem;
   }
 }
 .section-faq .header-faq p a,
-.section-faq .header-faq a a {
+.section-faq .header-faq .header-faq-link a {
   text-decoration: none;
 }
 .section-faq .header-faq p a:hover,
-.section-faq .header-faq a a:hover {
+.section-faq .header-faq .header-faq-link a:hover {
   text-decoration: underline;
 }
 .section-faq .header-faq .faq-btn {
   display: inline-block;
+  font-size: 1.125rem;
   text-decoration: none;
   font-weight: 500;
   line-height: 150%;
@@ -1554,6 +1555,11 @@ body {
   padding: 1.125rem 1.5rem;
   transition: background-color 0.3s;
 }
+@media (max-width: 767px) {
+  .section-faq .header-faq .faq-btn {
+    font-size: 0.875rem;
+  }
+}
 .section-faq .header-faq .faq-btn:hover {
   background-color: #F1F1F3;
   border: 0.0625rem solid #E4E4E7;
@@ -1563,8 +1569,7 @@ body {
 }
 .section-faq .faq-container .faq-item {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   border: 0.0625rem solid #F1F1F3;
   border-radius: 0.75rem;
   margin-bottom: 1.875rem;
@@ -1573,31 +1578,54 @@ body {
 .section-faq .faq-container .faq-item:last-child {
   margin-bottom: 0;
 }
-.section-faq .faq-container .faq-item .faq-content .faq-title {
+.section-faq .faq-container .faq-item .faq-question {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.section-faq .faq-container .faq-item .faq-question .faq-title {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 150%;
   color: #262626;
 }
 @media (max-width: 767px) {
-  .section-faq .faq-container .faq-item .faq-content .faq-title {
+  .section-faq .faq-container .faq-item .faq-question .faq-title {
     font-size: 1rem;
   }
 }
-.section-faq .faq-container .faq-item .faq-content .faq-text {
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 150%;
-  color: #4C4C4D;
+.section-faq .faq-container .faq-item .faq-question .faq-toggle {
+  display: flex;
+  background-color: #FFF4E5;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-left: 0.625rem;
+}
+.section-faq .faq-container .faq-item .faq-question .faq-toggle .faq-toggle-plus {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: #262626;
+}
+.section-faq .faq-container .faq-item .faq-question .faq-toggle .faq-toggle-plus {
+  display: inline-block;
+}
+.section-faq .faq-container .faq-item .faq-question .faq-toggle .faq-toggle-close {
   display: none;
 }
-@media (max-width: 767px) {
-  .section-faq .faq-container .faq-item .faq-content .faq-text {
-    font-size: 0.875rem;
-  }
+.section-faq .faq-container .faq-item.active .faq-toggle .faq-toggle-plus {
+  display: none;
 }
-.section-faq .faq-container .faq-item.active .faq-title {
-  padding-bottom: 2.1875rem;
+.section-faq .faq-container .faq-item.active .faq-toggle .faq-toggle-close {
+  display: inline-block;
+  width: 1.75rem;
+  height: 1.75rem;
+  color: #262626;
+}
+.section-faq .faq-container .faq-item.active .faq-question {
+  padding-bottom: 35px;
   border-bottom: 0.0625rem solid #F1F1F3;
 }
 .section-faq .faq-container .faq-item.active .faq-text {
@@ -1609,6 +1637,18 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.section-faq .faq-container .faq-item .faq-text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #4C4C4D;
+  display: none;
+}
+@media (max-width: 767px) {
+  .section-faq .faq-container .faq-item .faq-text {
+    font-size: 0.875rem;
+  }
+}
 .section-faq .faq-container .faq-item .faq-link {
   display: none;
   padding: 1.25rem 1.875rem;
@@ -1617,6 +1657,7 @@ body {
   border-radius: 0.5rem;
   text-decoration: none;
   margin-top: 3.125rem;
+  width: 100%;
 }
 .section-faq .faq-container .faq-item .faq-link:hover .faq-link-icon-svg {
   transform: translateX(0.1875rem);
@@ -1637,43 +1678,13 @@ body {
   background-color: #FFF;
   padding: 0.875rem;
   border-radius: 100%;
+  margin-left: 0.625rem;
 }
 .section-faq .faq-container .faq-item .faq-link .faq-link-icon .faq-link-icon-svg {
   width: 1.75rem;
   height: 1.75rem;
   color: #4C4C4D;
   transition: transform 0.3s ease;
-}
-.section-faq .faq-container .faq-item .faq-toggle {
-  display: flex;
-  background-color: #FFF4E5;
-  padding: 0.75rem;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-.section-faq .faq-container .faq-item .faq-toggle .faq-toggle-plus {
-  width: 1.75rem;
-  height: 1.75rem;
-  color: #262626;
-}
-.section-faq .faq-container .faq-item .faq-toggle .faq-toggle-plus {
-  display: inline-block;
-}
-.section-faq .faq-container .faq-item .faq-toggle .faq-toggle-close {
-  display: none;
-}
-.section-faq .faq-container .faq-item.active {
-  align-items: flex-start !important;
-}
-.section-faq .faq-container .faq-item.active .faq-toggle .faq-toggle-plus {
-  display: none;
-}
-.section-faq .faq-container .faq-item.active .faq-toggle .faq-toggle-close {
-  display: inline-block;
-  width: 1.75rem;
-  height: 1.75rem;
-  color: #262626;
 }
 
 @media screen and (max-width: 400px) {
@@ -1691,6 +1702,30 @@ body {
   .plan-btn {
     padding: 1.125rem 1.5rem !important;
   }
+  .header-faq h2 {
+    margin-bottom: 0.25rem !important;
+  }
+  .header-faq .faq-btn {
+    padding: 0.875rem 1.25rem !important;
+  }
+  .faq-container .faq-item .faq-question .faq-toggle {
+    padding: 0.625rem !important;
+  }
+  .faq-container .faq-item .faq-question .faq-toggle .faq-toggle-plus {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+  }
+  .faq-container .faq-item .faq-link .faq-link-icon {
+    padding: 0.625rem !important;
+  }
+  .faq-container .faq-item .faq-link .faq-link-icon .faq-link-icon-svg {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+  }
+  .faq-container .faq-item.active .faq-toggle .faq-toggle-close {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+  }
 }
 @media screen and (max-width: 1023px) {
   .section-pricing {
@@ -1707,25 +1742,42 @@ body {
   }
   .section-pricing .tabs-content .plans-wrapper .plan-card {
     width: 100% !important;
-  }
-  .section-pricing .tabs-content .plan-card {
     padding: 1.875rem 1.25rem 1.25rem 1.25rem !important;
   }
-  .section-pricing .tabs-content .plan-card .plan-header {
+  .section-pricing .tabs-content .plans-wrapper .plan-card .plan-header {
     padding: 0.5rem 1.375rem !important;
     margin-bottom: 1.875rem !important;
   }
-  .section-pricing .tabs-content .plan-card .plan-price {
+  .section-pricing .tabs-content .plans-wrapper .plan-card .plan-price {
     margin-bottom: 1.875rem !important;
   }
-  .section-pricing .tabs-content .plan-card .plan-features {
+  .section-pricing .tabs-content .plans-wrapper .plan-card .plan-features {
     padding: 1.25rem !important;
   }
-  .section-pricing .tabs-content .plan-card .plan-features .features-heading {
+  .section-pricing .tabs-content .plans-wrapper .plan-card .plan-features .features-heading {
     margin-bottom: 1.25rem !important;
   }
-  .section-pricing .tabs-content .plan-card .plan-features .feature-content {
+  .section-pricing .tabs-content .plans-wrapper .plan-card .plan-features .feature-content {
     padding: 0.75rem !important;
+  }
+  .section-faq {
+    margin-bottom: 3.125rem;
+    padding: 1.5rem;
+    gap: 2.5rem;
+  }
+  .section-faq .header-faq p {
+    margin-bottom: 1.25rem !important;
+  }
+  .section-faq .faq-container .faq-item {
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .section-faq .faq-container .faq-item .faq-text {
+    padding-top: 1.25rem !important;
+  }
+  .section-faq .faq-container .faq-item .faq-link {
+    margin-top: 1.25rem;
+    padding: 0.75rem 1.25rem;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -1744,6 +1796,25 @@ body {
   .section-pricing .tabs-content .plan-card .plan-features {
     padding: 1.875rem !important;
   }
+  .section-faq {
+    margin-bottom: 6.25rem;
+    padding: 3.125rem;
+    gap: 3.75rem;
+  }
+  .section-faq .header-faq p {
+    margin-bottom: 2.5rem !important;
+  }
+  .section-faq .faq-container .faq-item {
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .section-faq .faq-container .faq-item .faq-text {
+    padding-top: 2.5rem !important;
+  }
+  .section-faq .faq-container .faq-item .faq-link {
+    margin-top: 2.5rem;
+    padding: 1rem 1.5rem;
+  }
 }
 @media screen and (max-width: 1279px) {
   .pricing-tabs {
@@ -1754,5 +1825,19 @@ body {
   }
   .pricing-tabs .tabs-list {
     position: unset !important;
+  }
+  .section-faq {
+    flex-direction: column;
+  }
+  .section-faq .header-faq {
+    width: 100%;
+  }
+  .section-faq .faq-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .faq-item.active .faq-question {
+    padding-bottom: 1.25rem !important;
   }
 }/*# sourceMappingURL=style.css.map */

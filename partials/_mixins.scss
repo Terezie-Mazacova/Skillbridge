@@ -132,3 +132,20 @@
     }
 }
 
+
+@mixin btn-info {
+    @include text-small;
+    font-weight: 500;
+    line-height: $line-height;
+    color: $grey-15;
+    text-decoration: none;
+    padding: 1.125rem 1.5rem;
+    background-color: $white-97;
+    border: .0625rem solid $white-95;
+    border-radius: $radius-8;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: $white-99;
+    }
+}

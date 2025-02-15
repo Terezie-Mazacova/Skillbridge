@@ -923,9 +923,9 @@
   background-color: #F7F7F8;
   border: 0.0625rem solid #F1F1F3;
   border-radius: 0.5rem;
+  transition: background-color 0.3s;
   width: 100%;
   text-align: center;
-  transition: background-color 0.3s;
 }
 @media (max-width: 767px) {
   .section-courses .courses-list .course-card .course-link {
@@ -1062,11 +1062,15 @@
   background-color: #F7F7F8;
   border: 0.0625rem solid #F1F1F3;
   border-radius: 0.5rem;
+  transition: background-color 0.3s;
 }
 @media (max-width: 767px) {
   .section-testimonials .testimonials-list .testimonial-card .testimonial-author-info .btn-read-more {
     font-size: 0.875rem;
   }
+}
+.section-testimonials .testimonials-list .testimonial-card .testimonial-author-info .btn-read-more:hover {
+  background-color: #FCFCFD;
 }
 
 @media screen and (max-width: 480px) {
@@ -1134,6 +1138,9 @@
   }
   .header-testimonials h2 {
     margin-bottom: 0.25rem !important;
+  }
+  .btn-read-more {
+    padding: 0.875rem 1rem !important;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {

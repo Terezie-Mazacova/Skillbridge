@@ -675,6 +675,7 @@
   }
 }
 .benefits-section .benefits-header .benefits-btn {
+  display: inline-block;
   text-decoration: none;
   font-size: 1.125rem;
   font-weight: 400;
@@ -696,6 +697,12 @@
 .benefits-section .benefits-header .benefits-btn:hover {
   background-color: #F1F1F3;
   border: 0.0625rem solid #FCFCFD;
+}
+@media (max-width: 767px) {
+  .benefits-section .benefits-header .benefits-btn {
+    padding: 0.875rem 1.25rem !important;
+    margin-left: 0 !important;
+  }
 }
 .benefits-section .benefits-list {
   display: grid;
@@ -809,8 +816,8 @@
   border-radius: 0.5rem;
   padding: 1.125rem 1.5rem;
   transition: background-color 0.3s;
-  margin-left: 1.875rem;
   white-space: nowrap;
+  margin-left: 1.875rem;
 }
 @media (max-width: 767px) {
   .section-courses .header-courses .courses-btn {
@@ -820,6 +827,12 @@
 .section-courses .header-courses .courses-btn:hover {
   background-color: #F1F1F3;
   border: 0.0625rem solid #FCFCFD;
+}
+@media (max-width: 767px) {
+  .section-courses .header-courses .courses-btn {
+    padding: 0.875rem 1.25rem !important;
+    margin-left: 0 !important;
+  }
 }
 .section-courses .courses-list {
   display: grid;
@@ -980,6 +993,12 @@
   background-color: #F1F1F3;
   border: 0.0625rem solid #FCFCFD;
 }
+@media (max-width: 767px) {
+  .section-testimonials .header-testimonials .testimonials-btn {
+    padding: 0.875rem 1.25rem !important;
+    margin-left: 0 !important;
+  }
+}
 .section-testimonials .testimonials-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1088,10 +1107,6 @@
   .benefits-header h2 {
     margin-bottom: 0.25rem !important;
   }
-  .benefits-header .benefits-btn {
-    padding: 0.875rem 1.25rem !important;
-    margin-left: 0 !important;
-  }
   .benefits-list {
     grid-template-columns: repeat(1, 1fr) !important;
   }
@@ -1106,10 +1121,6 @@
   .header-courses h2 {
     margin-bottom: 0.25rem !important;
   }
-  .header-courses .courses-btn {
-    margin-left: 0 !important;
-    padding: 0.875rem 1.25rem !important;
-  }
   .course-details span {
     padding: 0.5rem 0.875rem !important;
   }
@@ -1123,10 +1134,6 @@
   }
   .header-testimonials h2 {
     margin-bottom: 0.25rem !important;
-  }
-  .header-testimonials .testimonials-btn {
-    margin-left: 0 !important;
-    padding: 0.875rem 1.25rem !important;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1544,16 +1551,19 @@ body {
 }
 .section-faq .header-faq .faq-btn {
   display: inline-block;
-  font-size: 1.125rem;
   text-decoration: none;
-  font-weight: 500;
+  font-size: 1.125rem;
+  font-weight: 400;
   line-height: 150%;
   color: #262626;
-  background-color: #FFF;
+  background-color: #FCFCFD;
   border: 0.0625rem solid #F1F1F3;
   border-radius: 0.5rem;
   padding: 1.125rem 1.5rem;
   transition: background-color 0.3s;
+  white-space: nowrap;
+  margin-left: 1.875rem;
+  margin-left: 0;
 }
 @media (max-width: 767px) {
   .section-faq .header-faq .faq-btn {
@@ -1562,7 +1572,13 @@ body {
 }
 .section-faq .header-faq .faq-btn:hover {
   background-color: #F1F1F3;
-  border: 0.0625rem solid #E4E4E7;
+  border: 0.0625rem solid #FCFCFD;
+}
+@media (max-width: 767px) {
+  .section-faq .header-faq .faq-btn {
+    padding: 0.875rem 1.25rem !important;
+    margin-left: 0 !important;
+  }
 }
 .section-faq .faq-container {
   width: 60%;
@@ -1704,9 +1720,6 @@ body {
   }
   .header-faq h2 {
     margin-bottom: 0.25rem !important;
-  }
-  .header-faq .faq-btn {
-    padding: 0.875rem 1.25rem !important;
   }
   .faq-container .faq-item .faq-question .faq-toggle {
     padding: 0.625rem !important;

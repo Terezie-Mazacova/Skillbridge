@@ -160,23 +160,7 @@
         }
 
         .benefits-btn {
-            text-decoration: none;
-            @include text-small;
-            font-weight: 400;
-            line-height: $line-height;
-            color: $grey-15;
-            background-color: $white-99;
-            border: .0625rem solid $white-95;
-            border-radius: $radius-8;
-            padding: 1.125rem 1.5rem;
-            transition: background-color 0.3s;
-            white-space: nowrap;
-            margin-left: 1.875rem;
-
-            &:hover {
-                background-color: $white-95;
-                border: .0625rem solid $white-99;
-            }
+            @include btn-view-all;
         }
     }
 
@@ -263,24 +247,7 @@
         }
 
         .courses-btn {
-            display: inline-block;
-            text-decoration: none;
-            @include text-small;
-            font-weight: 400;
-            line-height: $line-height;
-            color: $grey-15;
-            background-color: $white-99;
-            border: .0625rem solid $white-95;
-            border-radius: $radius-8;
-            padding: 1.125rem 1.5rem;
-            transition: background-color 0.3s;
-            margin-left: 1.875rem;
-            white-space: nowrap;
-
-            &:hover {
-                background-color: $white-95;
-                border: .0625rem solid $white-99;
-            }
+            @include btn-view-all;
         }
     }
 
@@ -401,24 +368,7 @@
         }
 
         .testimonials-btn {
-            display: inline-block;
-            text-decoration: none;
-            @include text-small;
-            font-weight: 400;
-            line-height: $line-height;
-            color: $grey-15;
-            background-color: $white-99;
-            border: .0625rem solid $white-95;
-            border-radius: $radius-8;
-            padding: 1.125rem 1.5rem;
-            transition: background-color 0.3s;
-            white-space: nowrap;
-            margin-left: 1.875rem;
-
-            &:hover {
-                background-color: $white-95;
-                border: .0625rem solid $white-99;
-            }
+            @include btn-view-all;
         }
     }
 
@@ -540,11 +490,6 @@
         h2 {
             margin-bottom: .25rem !important;
         }
-
-        .benefits-btn {
-            padding: .875rem 1.25rem !important;
-            margin-left: 0 !important;
-        }
     }
 
     .benefits-list {
@@ -566,11 +511,6 @@
         h2 {
             margin-bottom: .25rem !important;
         }
-
-        .courses-btn {
-            margin-left: 0 !important;
-            padding: .875rem 1.25rem !important;
-        }
     }
 
     .course-details {
@@ -591,11 +531,6 @@
 
         h2 {
             margin-bottom: .25rem !important;
-        }
-
-        .testimonials-btn {
-            margin-left: 0 !important;
-            padding: .875rem 1.25rem !important;
         }
     }
 }

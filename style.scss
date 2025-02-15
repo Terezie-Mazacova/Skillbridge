@@ -261,22 +261,8 @@ body {
         }
 
         .faq-btn {
-            display: inline-block;
-            @include text-small;
-            text-decoration: none;
-            font-weight: 500;
-            line-height: $line-height;
-            color: $grey-15;
-            background-color: $white;
-            border: .0625rem solid $white-95;
-            border-radius: $radius-8;
-            padding: 1.125rem 1.5rem;
-            transition: background-color 0.3s;
-
-            &:hover {
-                background-color: $white-95;
-                border: .0625rem solid $white-90;
-            }
+            @include btn-view-all;
+            margin-left: 0;
         }
     }
 
@@ -443,10 +429,6 @@ body {
     .header-faq {
         h2 {
             margin-bottom: .25rem !important;
-        }
-
-        .faq-btn {
-            padding: .875rem 1.25rem !important;
         }
     }
 

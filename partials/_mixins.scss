@@ -104,3 +104,31 @@
     }
 }
 
+
+// == BUTTONS ==
+@mixin btn-view-all {
+    display: inline-block;
+    text-decoration: none;
+    @include text-small;
+    font-weight: 400;
+    line-height: $line-height;
+    color: $grey-15;
+    background-color: $white-99;
+    border: .0625rem solid $white-95;
+    border-radius: $radius-8;
+    padding: 1.125rem 1.5rem;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+    margin-left: 1.875rem;
+
+    &:hover {
+        background-color: $white-95;
+        border: .0625rem solid $white-99;
+    }
+
+    @media (max-width: 767px) {
+        padding: .875rem 1.25rem !important;
+        margin-left: 0 !important;
+    }
+}
+

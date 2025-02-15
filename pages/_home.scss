@@ -58,9 +58,7 @@
 
             p {
                 text-align: center;
-                @include text-small;
-                font-weight: 400;
-                line-height: $line-height;
+                @include text-base;
                 color: $grey-15;
             }
         }
@@ -152,10 +150,7 @@
         }
 
         p {
-            @include text-small;
-            font-weight: 400;
-            line-height: $line-height;
-            color: $grey-35;
+            @include text-base;
             max-width: 73.5625rem;
         }
 
@@ -195,9 +190,7 @@
                 }
 
                 p {
-                    @include text-small;
-                    font-weight: 400;
-                    line-height: $line-height;
+                    @include text-base;
                     color: $grey-30;
                 }
             }
@@ -239,10 +232,7 @@
         }
 
         p {
-            @include text-small;
-            font-weight: 400;
-            line-height: $line-height;
-            color: $grey-35;
+            @include text-base;
             max-width: 73.5625rem;
         }
 
@@ -311,9 +301,7 @@
                 }
 
                 p {
-                    @include text-small;
-                    font-weight: 400;
-                    line-height: $line-height;
+                    @include text-base;
                     color: $grey-30;
                 }
             }
@@ -347,10 +335,7 @@
         }
 
         p {
-            @include text-small;
-            font-weight: 400;
-            line-height: $line-height;
-            color: $grey-35;
+            @include text-base;
             max-width: 73.5625rem;
         }
 
@@ -374,9 +359,7 @@
                 border-bottom: .0625rem solid $white-95;
 
                 p {
-                    @include text-small;
-                    font-weight: 400;
-                    line-height: $line-height;
+                    @include text-base;
                     color: $grey-30;
                 }
             }

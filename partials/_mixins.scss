@@ -85,6 +85,13 @@
     }
 }
 
+@mixin text-base {
+    @include text-small;
+    font-weight: 400;
+    line-height: $line-height;
+    color: $grey-35;
+}
+
 // == OTHER ==
 @mixin centered-container {
     padding: 0 10.125rem;

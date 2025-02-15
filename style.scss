@@ -43,10 +43,7 @@ body {
         }
 
         p {
-            @include text-small;
-            font-weight: 400;
-            line-height: $line-height;
-            color: $grey-35;
+            @include text-base;
             max-width: 50rem;
         }
     }
@@ -187,9 +184,7 @@ body {
                                 }
 
                                 .feature-text {
-                                    @include text-small;
-                                    font-weight: 400;
-                                    line-height: $line-height;
+                                    @include text-base;
                                     color: $grey-30;
                                 }
                             }
@@ -244,10 +239,7 @@ body {
 
         p,
         .header-faq-link {
-            @include text-small;
-            font-weight: 400;
-            line-height: $line-height;
-            color: $grey-35;
+            @include text-base;
             max-width: 73.5625rem;
             margin-bottom: 3.125rem;
 
@@ -293,7 +285,7 @@ body {
                     line-height: $line-height;
                     color: $grey-15;
                 }
- 
+
                 .faq-toggle {
                     display: flex;
                     background-color: $orange-95;
@@ -353,9 +345,7 @@ body {
             }
             
             .faq-text {
-                @include text-small;
-                font-weight: 400;
-                line-height: $line-height;
+                @include text-base;
                 color: $grey-30;
                 display: none;
             }

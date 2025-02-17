@@ -49,6 +49,9 @@
             gap: 3.125rem;
             align-items: center;
             
+            .nav-logo {
+                display: flex;
+            }
 
             .main-nav {
                 ul {

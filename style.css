@@ -63,6 +63,9 @@
   gap: 3.125rem;
   align-items: center;
 }
+.header-content .branding-nav .nav-actions .nav-logo {
+  display: flex;
+}
 .header-content .branding-nav .nav-actions .main-nav ul {
   display: flex;
 }
@@ -1269,6 +1272,49 @@
     padding: 1.25rem 1.875rem !important;
   }
 }
+.subpage-intro {
+  display: flex;
+  gap: 6.25rem;
+  padding-top: 6.25rem;
+  margin-bottom: 7.5rem;
+  padding-bottom: 3.125rem;
+  border-bottom: 0.0625rem solid #E4E4E7;
+}
+.subpage-intro h1 {
+  width: 50%;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #262626;
+}
+@media (max-width: 767px) {
+  .subpage-intro h1 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .subpage-intro h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .subpage-intro h1 {
+    font-size: 2.25rem;
+  }
+}
+.subpage-intro p {
+  width: 50%;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #59595A;
+}
+@media (max-width: 767px) {
+  .subpage-intro p {
+    font-size: 0.875rem;
+  }
+}
+
 *, *::before, *::after {
   padding: 0;
   margin: 0;

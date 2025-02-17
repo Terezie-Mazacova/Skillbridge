@@ -1,0 +1,22 @@
+// == SUBPAGE INTRO SECTION ==
+.subpage-intro {
+    display: flex;
+    gap: 6.25rem;
+    padding-top: 6.25rem;
+    margin-bottom: 7.5rem;
+    padding-bottom: 3.125rem;
+    border-bottom: .0625rem solid $white-90;
+
+    h1 {
+        width: 50%;
+        @include h1-main;
+        font-weight: 600;
+        line-height: $line-height;
+        color: $grey-15;
+    }
+
+    p {
+        width: 50%;
+        @include text-base;
+    }
+}

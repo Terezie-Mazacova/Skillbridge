@@ -2,14 +2,14 @@
 .subpage-intro {
     display: flex;
     gap: 6.25rem;
-    padding-top: 6.25rem;
+    margin-top: 6.25rem;
     margin-bottom: 7.5rem;
     padding-bottom: 3.125rem;
     border-bottom: .0625rem solid $white-90;
 
     h1 {
         width: 50%;
-        @include h1-main;
+        @include heading;
         font-weight: 600;
         line-height: $line-height;
         color: $grey-15;
@@ -149,3 +149,31 @@
     }
 }
 
+
+// == BREAKPOINTY ==
+@media screen and (max-width: 1023px) {
+    // == SUBPAGE INTRO SECTION ==
+    .subpage-intro {
+        margin: 50px 0;
+        padding-bottom: 30px;
+        gap: 1rem;
+        flex-direction: column;
+
+        h1 {
+            width: 100%;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    // == SUBPAGE INTRO SECTION ==
+    .subpage-intro {
+        margin: 100px 0;
+        padding-bottom: 40px;
+        gap: 80px;
+    }
+}

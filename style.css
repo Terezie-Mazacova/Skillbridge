@@ -1275,7 +1275,7 @@
 .subpage-intro {
   display: flex;
   gap: 6.25rem;
-  padding-top: 6.25rem;
+  margin-top: 6.25rem;
   margin-bottom: 7.5rem;
   padding-bottom: 3.125rem;
   border-bottom: 0.0625rem solid #E4E4E7;
@@ -1289,17 +1289,7 @@
 }
 @media (max-width: 767px) {
   .subpage-intro h1 {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1279px) {
-  .subpage-intro h1 {
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1440px) {
-  .subpage-intro h1 {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
   }
 }
 .subpage-intro p {
@@ -1476,6 +1466,27 @@
   }
 }
 
+@media screen and (max-width: 1023px) {
+  .subpage-intro {
+    margin: 50px 0;
+    padding-bottom: 30px;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .subpage-intro h1 {
+    width: 100%;
+  }
+  .subpage-intro p {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .subpage-intro {
+    margin: 100px 0;
+    padding-bottom: 40px;
+    gap: 80px;
+  }
+}
 *, *::before, *::after {
   padding: 0;
   margin: 0;

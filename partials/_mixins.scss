@@ -39,6 +39,10 @@
 
 @mixin text-xxlarge {
     font-size: 3.125rem;
+
+    @media (max-width: 767px) {
+        font-size: 30px;
+    }
 }
 
 @mixin text-xlarge {

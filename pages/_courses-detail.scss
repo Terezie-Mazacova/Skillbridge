@@ -1,0 +1,97 @@
+// == COURSES DETAIL == 
+.course-section {
+    margin-bottom: 7.5rem;
+
+    .course-intro-image {
+        width: 100%;
+        margin-bottom: 7.5rem;
+    }
+
+    .course-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.875rem;
+
+        .course-detail-card {
+            background-color: $white;
+            border-radius: $radius-12;
+            padding: 3.125rem;
+
+            .course-number {
+                @include text-huge;
+                font-weight: 700;
+                color: $grey-15;
+                text-align: right;
+            }
+
+            .course-detail-info {
+                .course-title {
+                    @include text-large;
+                    font-weight: 600;
+                    line-height: $line-height;
+                    color: $grey-20;
+                    padding: 3.125rem 0;
+                }
+
+                .course-lesson {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border: .0625rem solid $white-95;
+                    border-radius: $radius-8;
+                    margin-bottom: 1.25rem;
+                    padding: 1.5rem 1.875rem;
+                    cursor: pointer;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .course-lesson-text {
+                        .course-lesson-title {
+                            @include text-medium;
+                            font-weight: 500;
+                            line-height: $line-height;
+                            color: $grey-20;
+                            margin-bottom: .375rem;
+
+                            .course-lesson-number {
+                                @include text-base;
+                            }
+                        }
+                    }
+
+                    .course-detail-duration {
+                        display: flex;
+                        align-items: center;
+                        gap: .25rem;
+                        padding: .75rem .875rem;
+                        background-color: $white-97;
+                        border-radius: $radius-6;
+
+                        .course-detail-icon {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            color: $grey-30;
+                        }
+
+                        .course-duration-text {
+                            @include text-base;
+                            white-space: nowrap;
+                        }
+                    }
+
+                    &:hover {
+                        border: .0625rem solid $orange-90;
+                        box-shadow: 0 0 0 .25rem rgba($orange-90, 0.5);
+
+                        .course-detail-duration {
+                            background-color: $orange-90;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1639,6 +1639,7 @@
 .course-section .course-content .course-detail-card .course-detail-info .course-lesson {
   display: flex;
   justify-content: space-between;
+  gap: 0.625rem;
   align-items: center;
   border: 0.0625rem solid #F1F1F3;
   border-radius: 0.5rem;
@@ -1705,6 +1706,67 @@
   background-color: #FFEACC;
 }
 
+@media screen and (max-width: 767px) {
+  .course-lesson {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 1.5rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .course-section {
+    margin-bottom: 3.125rem;
+  }
+  .course-section .course-intro-image {
+    margin-bottom: 3.125rem;
+  }
+  .course-section .course-content {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .course-section .course-content .course-detail-card {
+    padding: 1.875rem;
+  }
+  .course-section .course-content .course-detail-card .course-detail-info .course-title {
+    padding: 1.875rem 0;
+  }
+  .course-section .course-content .course-detail-card .course-detail-info .course-lesson {
+    padding: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .course-section {
+    margin-bottom: 6.25rem;
+  }
+  .course-section .course-intro-image {
+    margin-bottom: 6.25rem;
+  }
+  .course-section .course-content .course-detail-card {
+    padding: 2.5rem;
+  }
+  .course-section .course-content .course-detail-card .course-detail-info .course-title {
+    padding: 2.5rem 0;
+  }
+  .course-section .course-content .course-detail-card .course-detail-info .course-lesson {
+    padding: 1.25rem 1.5rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .course-content {
+    gap: 1.25rem !important;
+  }
+  .course-content .course-lesson {
+    margin-bottom: 1rem !important;
+  }
+  .course-content .course-lesson:last-child {
+    margin-bottom: 0 !important;
+  }
+  .course-content .course-lesson .course-lesson-title {
+    margin-bottom: 0.125rem !important;
+  }
+  .course-content .course-lesson .course-detail-duration {
+    padding: 0.625rem !important;
+  }
+}
 *, *::before, *::after {
   padding: 0;
   margin: 0;

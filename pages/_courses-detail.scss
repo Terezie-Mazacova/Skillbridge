@@ -36,6 +36,7 @@
                 .course-lesson {
                     display: flex;
                     justify-content: space-between;
+                    gap: .625rem;
                     align-items: center;
                     border: .0625rem solid $white-95;
                     border-radius: $radius-8;
@@ -95,3 +96,93 @@
     }
 }
 
+
+// BREAKPOINTY ==
+@media screen and (max-width: 767px) {
+    // == COURSES DETAIL == 
+    .course-lesson {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    // == COURSES DETAIL == 
+    .course-section {
+        margin-bottom: 3.125rem;
+
+        .course-intro-image {
+            margin-bottom: 3.125rem;
+        }
+
+        .course-content {
+            grid-template-columns: repeat(1, 1fr) !important;
+
+            .course-detail-card {
+                padding: 1.875rem;
+
+                .course-detail-info {
+                    .course-title {
+                        padding: 1.875rem 0;
+                    }
+
+                    .course-lesson {
+                        padding: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    // == COURSES DETAIL == 
+    .course-section {
+        margin-bottom: 6.25rem;
+
+        .course-intro-image {
+            margin-bottom: 6.25rem;
+        }
+
+        .course-content {
+            .course-detail-card {
+                padding: 2.5rem;
+
+                .course-detail-info {
+                    .course-title {
+                        padding: 2.5rem 0;
+                    }
+
+                    .course-lesson {
+                        padding: 1.25rem 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    // == COURSES DETAIL == 
+    .course-content {
+        gap: 1.25rem !important;
+
+        .course-lesson {
+            margin-bottom: 1rem !important;
+    
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+    
+            .course-lesson-title {
+                margin-bottom: .125rem !important;
+            }
+    
+            .course-detail-duration {
+                padding: .625rem !important;
+            }
+        }
+    }
+}

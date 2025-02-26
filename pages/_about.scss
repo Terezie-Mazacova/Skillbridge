@@ -1,0 +1,56 @@
+// == ACHIEVEMENTS SECTION ==
+.achievements-section {
+    margin-bottom: 7.5rem;
+
+    .achievements-header {
+        margin-bottom: 5rem;
+
+        h2 {
+            @include heading;
+            font-weight: 500;
+            line-height: $line-height;
+            color: $grey-20;
+            margin-bottom: .375rem;
+        }
+
+        p {
+            @include text-base;
+        }
+    }
+
+    .achievements-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.875rem;
+
+        .achievement-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 3.125rem;
+            background-color: $white;
+            border-radius: $radius-12;
+
+            .achievement-icon {
+                display: flex;
+                background-color: $orange-97;
+                border: .0625rem solid $orange-90;
+                border-radius: $radius-8;
+                padding: 1rem;
+                margin-bottom: 1.875rem;
+            }
+
+            .achievement-title {
+                @include text-large;
+                font-weight: 500;
+                line-height: $line-height;
+                color: $grey-15;
+                margin-bottom: .875rem;
+            }
+
+            .achievement-text {
+                @include text-base;
+            }
+        }
+    }
+}

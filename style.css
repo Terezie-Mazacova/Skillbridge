@@ -1767,13 +1767,13 @@
     padding: 0.625rem !important;
   }
 }
-.achievements-section {
+.info-section {
   margin-bottom: 7.5rem;
 }
-.achievements-section .achievements-header {
+.info-section .info-header {
   margin-bottom: 5rem;
 }
-.achievements-section .achievements-header h2 {
+.info-section .info-header h2 {
   font-size: 3rem;
   font-weight: 500;
   line-height: 150%;
@@ -1781,27 +1781,27 @@
   margin-bottom: 0.375rem;
 }
 @media (max-width: 767px) {
-  .achievements-section .achievements-header h2 {
+  .info-section .info-header h2 {
     font-size: 1.75rem;
   }
 }
-.achievements-section .achievements-header p {
+.info-section .info-header p {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 150%;
   color: #59595A;
 }
 @media (max-width: 767px) {
-  .achievements-section .achievements-header p {
+  .info-section .info-header p {
     font-size: 0.875rem;
   }
 }
-.achievements-section .achievements-cards {
+.info-section .info-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.875rem;
 }
-.achievements-section .achievements-cards .achievement-card {
+.info-section .info-cards .info-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1809,7 +1809,7 @@
   background-color: #FFF;
   border-radius: 0.75rem;
 }
-.achievements-section .achievements-cards .achievement-card .achievement-icon {
+.info-section .info-cards .info-card .info-icon {
   display: flex;
   background-color: #FFF9F0;
   border: 0.0625rem solid #FFEACC;
@@ -1817,7 +1817,7 @@
   padding: 1rem;
   margin-bottom: 1.875rem;
 }
-.achievements-section .achievements-cards .achievement-card .achievement-title {
+.info-section .info-cards .info-card .info-card-title {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 150%;
@@ -1825,18 +1825,18 @@
   margin-bottom: 0.875rem;
 }
 @media (max-width: 767px) {
-  .achievements-section .achievements-cards .achievement-card .achievement-title {
+  .info-section .info-cards .info-card .info-card-title {
     font-size: 1.25rem;
   }
 }
-.achievements-section .achievements-cards .achievement-card .achievement-text {
+.info-section .info-cards .info-card .info-card-text {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 150%;
   color: #59595A;
 }
 @media (max-width: 767px) {
-  .achievements-section .achievements-cards .achievement-card .achievement-text {
+  .info-section .info-cards .info-card .info-card-text {
     font-size: 0.875rem;
   }
 }

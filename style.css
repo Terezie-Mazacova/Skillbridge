@@ -1840,6 +1840,72 @@
     font-size: 0.875rem;
   }
 }
+.info-section .info-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  background-color: #FFF;
+  margin-top: 5rem;
+  padding: 5rem;
+  border-radius: 0.75rem;
+  position: relative;
+}
+.info-section .info-cta .info-cta-text {
+  z-index: 1;
+}
+.info-section .info-cta .info-cta-text .info-cta-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 120%;
+  color: #262626;
+  max-width: 65rem;
+  margin-bottom: 1.25rem;
+}
+@media (max-width: 767px) {
+  .info-section .info-cta .info-cta-text .info-cta-heading {
+    font-size: 1.75rem;
+  }
+}
+.info-section .info-cta .info-cta-text .info-cta-highlight {
+  color: #FF9500;
+}
+.info-section .info-cta .info-cta-text .info-cta-description {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #59595A;
+}
+@media (max-width: 767px) {
+  .info-section .info-cta .info-cta-text .info-cta-description {
+    font-size: 0.875rem;
+  }
+}
+.info-section .info-cta .info-cta-object {
+  position: absolute;
+  right: 10rem;
+}
+.info-section .info-cta .info-cta-btn {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #FFF;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #FF9500;
+  padding: 1.125rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .info-section .info-cta .info-cta-btn {
+    font-size: 0.875rem;
+  }
+}
+.info-section .info-cta .info-cta-btn:hover {
+  background-color: #FFBF66;
+}
 
 *, *::before, *::after {
   padding: 0;

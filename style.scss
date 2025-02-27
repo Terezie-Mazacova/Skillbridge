@@ -89,6 +89,12 @@ body {
             }
         }
 
+        // == TABS-LIST-SUBPAGE FROM SUBPAGE PRICING
+        .tabs-list-subpage {
+            position: unset;
+            align-items: center;
+        }
+
         .tabs-content {
             background-color: $white;
             padding: 5rem;
@@ -216,6 +222,14 @@ body {
                 }
             }
         }
+    }
+
+    // == SUBPAGE PRICING ==
+    .pricing-tabs-subpage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.125rem;
     }
 }
 
@@ -469,6 +483,11 @@ body {
 
         .header-pricing {
             margin-bottom: 2.5rem;
+        }
+
+        // == SUBPAGE PRICING ==
+        .pricing-tabs-subpage {
+            gap: 2.5rem;
         }
 
         .tabs-content {

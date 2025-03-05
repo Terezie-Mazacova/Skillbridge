@@ -1,0 +1,93 @@
+// == CONTACT US SECTION ==
+.contact-section {
+    margin-bottom: 120px;
+
+    // == FORM ==
+    .contact-form {
+        padding: 80px;
+        background-color: $white;
+
+        fieldset {
+            border: none;
+
+            .input-group {
+                display: flex;
+                flex-direction: column;
+    
+                label {
+                    @include text-small;
+                    font-weight: 500;
+                    line-height: $line-height;
+                    color: $grey-15;
+                    margin-bottom: 1rem;
+                }
+    
+                .form-input {
+                    background-color: $white-99;
+                    border: 1px solid $white-95;
+                    padding: 24px 20px;
+                    border-radius: $radius-8;
+                    outline: none;
+
+                    &,
+                    &:focus,
+                    &:active {
+                        @include text-base;
+                    }
+                }
+
+                ::placeholder {
+                    @include text-base;
+                    color: $grey-40;
+                }
+            }
+        }
+
+        .personal-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .form-message {
+            margin-bottom: 50px;
+
+            .form-input-subject {
+                margin-bottom: 50px;
+            }
+
+            textarea {
+                ::placeholder {
+                    @include text-base;
+                    color: $grey-40;
+                }
+
+                &,
+                &:focus {
+                    font-family: "Be Vietnam Pro", serif;
+                    @include text-base;
+                }
+            }
+        }
+
+        .form-btn {
+            @include text-small;
+            font-weight: 500;
+            line-height: $line-height;
+            color: $white;
+            background-color: $orange-50;
+            border-radius: $radius-8;
+            padding: 18px 24px;
+            border: none;
+            display: flex;
+            margin: 0 auto;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $orange-70;
+            }
+        }
+    }
+}

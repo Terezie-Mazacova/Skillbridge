@@ -1980,6 +1980,141 @@
     margin-bottom: 1.5rem !important;
   }
 }
+.contact-section {
+  margin-bottom: 120px;
+}
+.contact-section .contact-form {
+  padding: 80px;
+  background-color: #FFF;
+}
+.contact-section .contact-form fieldset {
+  border: none;
+}
+.contact-section .contact-form fieldset .input-group {
+  display: flex;
+  flex-direction: column;
+}
+.contact-section .contact-form fieldset .input-group label {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #262626;
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .contact-section .contact-form fieldset .input-group label {
+    font-size: 0.875rem;
+  }
+}
+.contact-section .contact-form fieldset .input-group .form-input {
+  background-color: #FCFCFD;
+  border: 1px solid #F1F1F3;
+  padding: 24px 20px;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.contact-section .contact-form fieldset .input-group .form-input, .contact-section .contact-form fieldset .input-group .form-input:focus, .contact-section .contact-form fieldset .input-group .form-input:active {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #59595A;
+}
+@media (max-width: 767px) {
+  .contact-section .contact-form fieldset .input-group .form-input, .contact-section .contact-form fieldset .input-group .form-input:focus, .contact-section .contact-form fieldset .input-group .form-input:active {
+    font-size: 0.875rem;
+  }
+}
+.contact-section .contact-form fieldset .input-group ::-moz-placeholder {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #59595A;
+  color: #656567;
+}
+.contact-section .contact-form fieldset .input-group ::placeholder {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #59595A;
+  color: #656567;
+}
+@media (max-width: 767px) {
+  .contact-section .contact-form fieldset .input-group ::-moz-placeholder {
+    font-size: 0.875rem;
+  }
+  .contact-section .contact-form fieldset .input-group ::placeholder {
+    font-size: 0.875rem;
+  }
+}
+.contact-section .contact-form .personal-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.contact-section .contact-form .form-message {
+  margin-bottom: 50px;
+}
+.contact-section .contact-form .form-message .form-input-subject {
+  margin-bottom: 50px;
+}
+.contact-section .contact-form .form-message textarea ::-moz-placeholder {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #59595A;
+  color: #656567;
+}
+.contact-section .contact-form .form-message textarea ::placeholder {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #59595A;
+  color: #656567;
+}
+@media (max-width: 767px) {
+  .contact-section .contact-form .form-message textarea ::-moz-placeholder {
+    font-size: 0.875rem;
+  }
+  .contact-section .contact-form .form-message textarea ::placeholder {
+    font-size: 0.875rem;
+  }
+}
+.contact-section .contact-form .form-message textarea, .contact-section .contact-form .form-message textarea:focus {
+  font-family: "Be Vietnam Pro", serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #59595A;
+}
+@media (max-width: 767px) {
+  .contact-section .contact-form .form-message textarea, .contact-section .contact-form .form-message textarea:focus {
+    font-size: 0.875rem;
+  }
+}
+.contact-section .contact-form .form-btn {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #FFF;
+  background-color: #FF9500;
+  border-radius: 0.5rem;
+  padding: 18px 24px;
+  border: none;
+  display: flex;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+@media (max-width: 767px) {
+  .contact-section .contact-form .form-btn {
+    font-size: 0.875rem;
+  }
+}
+.contact-section .contact-form .form-btn:hover {
+  background-color: #FFBF66;
+}
+
 *, *::before, *::after {
   padding: 0;
   margin: 0;

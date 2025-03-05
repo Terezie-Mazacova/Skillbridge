@@ -1,11 +1,16 @@
 // == CONTACT US SECTION ==
 .contact-section {
-    margin-bottom: 120px;
+    display: flex;
+    gap: .125rem;
+    margin-bottom: 7.5rem;
 
     // == FORM ==
     .contact-form {
-        padding: 80px;
+        padding: 5rem;
         background-color: $white;
+        width: 70%;
+        border-top-left-radius: $radius-12;
+        border-bottom-left-radius: $radius-12;
 
         fieldset {
             border: none;
@@ -24,8 +29,8 @@
     
                 .form-input {
                     background-color: $white-99;
-                    border: 1px solid $white-95;
-                    padding: 24px 20px;
+                    border: .0625rem solid $white-95;
+                    padding: 1.5rem 1.25rem;
                     border-radius: $radius-8;
                     outline: none;
 
@@ -46,15 +51,15 @@
         .personal-details {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            margin-bottom: 30px;
+            gap: 1.875rem;
+            margin-bottom: 1.875rem;
         }
 
         .form-message {
-            margin-bottom: 50px;
+            margin-bottom: 3.125rem;
 
             .form-input-subject {
-                margin-bottom: 50px;
+                margin-bottom: 3.125rem;
             }
 
             textarea {
@@ -78,7 +83,7 @@
             color: $white;
             background-color: $orange-50;
             border-radius: $radius-8;
-            padding: 18px 24px;
+            padding: 1.125rem 1.5rem;
             border: none;
             display: flex;
             margin: 0 auto;
@@ -87,6 +92,62 @@
 
             &:hover {
                 background-color: $orange-70;
+            }
+        }
+    }
+
+    // == CONTACT ==
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $white;
+        padding: 5rem;
+        width: 30%;
+        border-top-right-radius: $radius-12;
+        border-bottom-right-radius: $radius-12;
+
+        .contact-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.25rem;
+            background-color: $white-99;
+            border: .0625rem solid $white-95;
+            padding: 1.875rem;
+            border-radius: $radius-8;
+
+            .contact-icon {
+                display: flex;
+                padding: .875rem;
+                background-color: $white-97;
+                border: .0625rem solid $white-95;
+                border-radius: $radius-8;
+
+                .contact-icon-svg {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+
+            .contact-text {
+                @include text-base;
+                color: $grey-30;
+                text-decoration: none;
+                font-style: normal;
+            }
+
+            .social-links {
+                display: flex;
+                gap: .875rem;
+
+                .social-link {
+                    display: flex;
+                    background-color: $white-97;
+                    border: .0625rem solid $white-95;
+                    border-radius: $radius-8;
+                    padding: .875rem;
+                }
             }
         }
     }

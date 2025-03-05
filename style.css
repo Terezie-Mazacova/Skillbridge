@@ -1981,11 +1981,16 @@
   }
 }
 .contact-section {
-  margin-bottom: 120px;
+  display: flex;
+  gap: 0.125rem;
+  margin-bottom: 7.5rem;
 }
 .contact-section .contact-form {
-  padding: 80px;
+  padding: 5rem;
   background-color: #FFF;
+  width: 70%;
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
 }
 .contact-section .contact-form fieldset {
   border: none;
@@ -2008,8 +2013,8 @@
 }
 .contact-section .contact-form fieldset .input-group .form-input {
   background-color: #FCFCFD;
-  border: 1px solid #F1F1F3;
-  padding: 24px 20px;
+  border: 0.0625rem solid #F1F1F3;
+  padding: 1.5rem 1.25rem;
   border-radius: 0.5rem;
   outline: none;
 }
@@ -2049,14 +2054,14 @@
 .contact-section .contact-form .personal-details {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-bottom: 30px;
+  gap: 1.875rem;
+  margin-bottom: 1.875rem;
 }
 .contact-section .contact-form .form-message {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 .contact-section .contact-form .form-message .form-input-subject {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 .contact-section .contact-form .form-message textarea ::-moz-placeholder {
   font-size: 1.125rem;
@@ -2099,7 +2104,7 @@
   color: #FFF;
   background-color: #FF9500;
   border-radius: 0.5rem;
-  padding: 18px 24px;
+  padding: 1.125rem 1.5rem;
   border: none;
   display: flex;
   margin: 0 auto;
@@ -2113,6 +2118,62 @@
 }
 .contact-section .contact-form .form-btn:hover {
   background-color: #FFBF66;
+}
+.contact-section .contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FFF;
+  padding: 5rem;
+  width: 30%;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+.contact-section .contact-info .contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  background-color: #FCFCFD;
+  border: 0.0625rem solid #F1F1F3;
+  padding: 1.875rem;
+  border-radius: 0.5rem;
+}
+.contact-section .contact-info .contact-card .contact-icon {
+  display: flex;
+  padding: 0.875rem;
+  background-color: #F7F7F8;
+  border: 0.0625rem solid #F1F1F3;
+  border-radius: 0.5rem;
+}
+.contact-section .contact-info .contact-card .contact-icon .contact-icon-svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.contact-section .contact-info .contact-card .contact-text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #59595A;
+  color: #4C4C4D;
+  text-decoration: none;
+  font-style: normal;
+}
+@media (max-width: 767px) {
+  .contact-section .contact-info .contact-card .contact-text {
+    font-size: 0.875rem;
+  }
+}
+.contact-section .contact-info .contact-card .social-links {
+  display: flex;
+  gap: 0.875rem;
+}
+.contact-section .contact-info .contact-card .social-links .social-link {
+  display: flex;
+  background-color: #F7F7F8;
+  border: 0.0625rem solid #F1F1F3;
+  border-radius: 0.5rem;
+  padding: 0.875rem;
 }
 
 *, *::before, *::after {

@@ -8,7 +8,7 @@
     .contact-form {
         padding: 5rem;
         background-color: $white;
-        width: 70%;
+        width: 65%;
         border-top-left-radius: $radius-12;
         border-bottom-left-radius: $radius-12;
 
@@ -103,7 +103,7 @@
         justify-content: space-between;
         background-color: $white;
         padding: 5rem;
-        width: 30%;
+        width: 35%;
         border-top-right-radius: $radius-12;
         border-bottom-right-radius: $radius-12;
 
@@ -137,6 +137,10 @@
                 font-style: normal;
             }
 
+            address {
+                text-align: center;
+            }
+
             .social-links {
                 display: flex;
                 gap: .875rem;
@@ -149,6 +153,137 @@
                     padding: .875rem;
                 }
             }
+        }
+    }
+}
+
+// == BREAKPOINTY ==
+@media screen and (max-width: 767px) {
+    .contact-section {
+        .contact-form {
+            .personal-details {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .form-btn {
+                width: 100%;
+                justify-content: center;
+                padding: .875rem 1.25rem;
+            }
+        }
+
+        .contact-info {
+            .contact-card {
+                gap: .875rem;
+
+                .contact-icon {
+                    padding: .75rem;
+                }
+
+                .social-links {
+                    .social-link {
+                        padding: .75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .contact-section {
+        margin-bottom: 3.125rem;
+
+        // == FORM ==
+        .contact-form {
+            padding: 1.875rem;
+
+            .personal-details {
+                gap: 1.25rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .form-message {
+                margin-bottom: 1.875rem;
+
+                .form-input-subject {
+                    margin-bottom: 1.25rem;
+                }
+            }
+        }
+
+        // == CONTACT ==
+        .contact-info {
+            padding: 1.875rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .contact-section {
+        margin-bottom: 6.25rem;
+
+        // == FORM ==
+        .contact-form {
+            padding: 3.75rem;
+
+            .personal-details {
+                margin-bottom: 1.5rem;
+            }
+
+            .form-message {
+                margin-bottom: 2.5rem;
+
+                .form-input-subject {
+                    margin-bottom: 2.5rem;
+                }
+            }
+        }
+
+        // == CONTACT ==
+        .contact-info {
+            padding: 3.75rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .contact-section {
+        flex-direction: column;
+    
+        // == FORM ==
+        .contact-form {
+            width: 100%;
+            border-top-right-radius: $radius-12;
+            border-bottom-left-radius: 0;
+
+            fieldset {
+                .input-group {
+                    label {
+                        margin-bottom: .75rem;
+                    }
+
+                    .form-input {
+                        padding: 1.25rem;
+                    }
+                }
+            }
+        }
+
+        // == CONTACT
+        .contact-info {
+            gap: 1.25rem;
+            width: 100%;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: $radius-12;
+        }
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1550px) {
+    .contact-section {
+        // == CONTACT ==
+        .contact-info {
+            padding: 4.375rem;
         }
     }
 }

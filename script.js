@@ -9,7 +9,7 @@ hamburger.addEventListener('click', function() {
 
 
 
-// == SLIDER ==
+// == SLIDER - MAIN PAGE==
 document.addEventListener('DOMContentLoaded', function () {
     const splides = document.querySelectorAll('.splide');
 
@@ -42,6 +42,33 @@ document.addEventListener('DOMContentLoaded', function () {
         }).mount();
     });
 });
+
+// == SLIDER SUBPAGE SIGN UP ==
+document.addEventListener( 'DOMContentLoaded', function() {
+    var splide2 = new Splide('.slider2', {
+        type: 'loop',
+        //width: '100%',
+        perPage: 1,
+        gap: '10px',
+        //autoplay: true,
+        perMove: 1,
+        //interval: 2000,
+        //speed: 900,
+        arrows: true,
+        pagination: true,
+        breakpoints: {
+            600: {
+                perPage: 2,
+                gap: '1rem',
+            },
+            480: {
+                perPage: 1,
+                gap: '1rem',
+            },
+        },
+    });
+    splide2.mount();
+} );
 
 
 // == OUR PRICING SECTION ==

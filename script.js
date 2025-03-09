@@ -10,6 +10,7 @@ hamburger.addEventListener('click', function() {
 
 
 // == SLIDER - MAIN PAGE==
+/*
 document.addEventListener('DOMContentLoaded', function () {
     const splides = document.querySelectorAll('.splide');
 
@@ -42,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }).mount();
     });
 });
-
+*/
 // == SLIDER SUBPAGE SIGN UP ==
 document.addEventListener( 'DOMContentLoaded', function() {
     var splide2 = new Splide('.slider2', {
@@ -55,7 +56,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
         //interval: 2000,
         //speed: 900,
         arrows: true,
-        pagination: true,
+        pagination: false,
         breakpoints: {
             600: {
                 perPage: 2,

@@ -14,6 +14,83 @@
     }
 }
 
+// == SLIDER - SIGN UP AND LOGIN ==
+.testimonial {
+    border: 1px solid $white-95;
+    border-radius: $radius-12;
+
+    .quote {
+        padding: 50px;
+        background-color: $white;
+        border-top-left-radius: $radius-12;
+        border-top-right-radius: $radius-12;
+        border-bottom: 1px solid $white-95;
+
+        p {
+            @include text-base;
+            color: $grey-30;
+        }
+    }
+
+    .testimonial-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 50px;
+        background-color: $white-99;
+        border-bottom-left-radius: $radius-12;
+        border-bottom-right-radius: $radius-12;
+
+        .testimonial-user {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+
+            img {
+                border-radius: $radius-8;
+            }
+
+            .testimonial-name {
+                @include text-small;
+                font-weight: 600;
+                line-height: $line-height;
+                color: $grey-20;
+            }
+        }
+
+        .btn-readmore {
+            @include text-small;
+            font-weight: 500;
+            line-height: $line-height;
+            color: $grey-15;
+            text-decoration: none;
+            background-color: $white-97;
+            border: 1px solid $white-95;
+            border-radius: $radius-8;
+            padding: 18px 24px;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $white-95;
+            }
+        }
+    }
+}
+
+.splide__arrow {
+    .custom-arrow__icon {
+        padding: 14px !important;
+        background-color: $white;
+        border: 1px solid $white-95;
+        border-radius: $radius-8;
+        color: $grey-15;
+    }
+
+}
+
+
+
+
 @media screen and (min-width: 1440px) {
     // == SLIDER - MAIN PAGE ==
     .logos-slider {

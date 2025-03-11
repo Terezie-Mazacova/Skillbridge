@@ -16,15 +16,15 @@
 
 // == SLIDER - SIGN UP AND LOGIN ==
 .testimonial {
-    border: 1px solid $white-95;
+    border: .0625rem solid $white-95;
     border-radius: $radius-12;
 
     .quote {
-        padding: 50px;
+        padding: 3.125rem;
         background-color: $white;
         border-top-left-radius: $radius-12;
         border-top-right-radius: $radius-12;
-        border-bottom: 1px solid $white-95;
+        border-bottom: .0625rem solid $white-95;
 
         p {
             @include text-base;
@@ -36,14 +36,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 30px 50px;
+        padding: 1.875rem 3.125rem;
         background-color: $white-99;
         border-bottom-left-radius: $radius-12;
         border-bottom-right-radius: $radius-12;
 
         .testimonial-user {
             display: flex;
-            gap: 15px;
+            gap: .9375rem;
             align-items: center;
 
             img {
@@ -65,9 +65,9 @@
             color: $grey-15;
             text-decoration: none;
             background-color: $white-97;
-            border: 1px solid $white-95;
+            border: .0625rem solid $white-95;
             border-radius: $radius-8;
-            padding: 18px 24px;
+            padding: 1.125rem 1.5rem;
             transition: background-color 0.3s;
 
             &:hover {
@@ -79,15 +79,22 @@
 
 .splide__arrow {
     .custom-arrow__icon {
-        padding: 14px !important;
+        padding: .875rem !important;
         background-color: $white;
-        border: 1px solid $white-95;
+        border: .0625rem solid $white-95;
         border-radius: $radius-8;
         color: $grey-15;
     }
-
 }
 
+.splide__arrow--prev,
+.splide__arrow--next {
+    top: 115%;
+}
+
+.splide__arrow--prev {
+    left: 84%;
+}
 
 
 

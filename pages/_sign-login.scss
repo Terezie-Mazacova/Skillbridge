@@ -1,7 +1,8 @@
 .auth-section {
     display: flex;
-    margin-bottom: 120px;
-    margin-top: 100px;
+    gap: 6.25rem;
+    margin-bottom: 7.5rem;
+    margin-top: 6.25rem;
 
     .auth-info {
         display: flex;
@@ -10,14 +11,14 @@
         width: 50%;
 
         .auth-header {
-            margin-bottom: 80px;
+            margin-bottom: 5rem;
 
             h2 {
                 @include text-x-large;
                 font-weight: 500;
                 line-height: $line-height;
                 color: $grey-15;
-                margin-bottom: 6px;
+                margin-bottom: .375rem;
             }
 
             p {
@@ -28,25 +29,209 @@
 
     .auth-form-container {
         width: 50%;
-        padding: 50px;
+        padding: 3.125rem;
         background-color: $white;
         border-radius: $radius-12;
 
         .auth-main-header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 3.125rem;
 
             h1 {
                 @include heading;
                 font-weight: 600;
                 color: $grey-15;
-                margin-bottom: 6px;
+                margin-bottom: .375rem;
             }
             
             p {
                 @include text-base;
                 color: $grey-30;
             }
+        }
+
+        .auth-form {
+            .auth-fields {
+                border: 0;
+                margin-bottom: 1.5rem;
+
+                .auth-field {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 1.5rem;
+
+                    
+
+                    label {
+                        @include text-small;
+                        font-weight: 500;
+                        line-height: $line-height;
+                        color: $grey-15;
+                        margin-bottom: .875rem;
+                    }
+
+                    input {
+                        background-color: $white-99;
+                        border: .0625rem solid $white-95;
+                        padding: 1.5rem;
+                        border-radius: $radius-8;
+                        outline: none;
+
+                        &,
+                        &:focus,
+                        &:active {
+                            @include text-base;
+                        }
+                    }
+
+                    ::placeholder {
+                        @include text-base;
+                        color: $grey-40;
+                    }
+                }
+
+                .auth-checkbox {
+                    label {
+                        @include text-base;
+                    }
+
+
+                    input[type="checkbox"] {
+                        display: none;
+                    }
+
+                    input[type="checkbox"] + label {
+                        position: relative;
+                        padding-left: 3.125rem;
+                        cursor: pointer;
+                    }
+                    
+                    input[type="checkbox"] + label::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: -0.125rem;
+                        width: 1.75rem;
+                        height: 1.75rem;
+                        background-color: $white-97;
+                        border: .0625rem solid $white-95;
+                        border-radius: .25rem;
+                        transition: background-color 0.3s;
+                    }
+                    
+                    input[type="checkbox"]:checked + label::before {
+                        background-color: $orange-50;
+                    }
+                    
+                    input[type="checkbox"]:checked + label::after {
+                        content: '';
+                        position: absolute;
+                        left: .625rem;
+                        top: .25rem;
+                        width: .5rem;
+                        height: .75rem;
+                        border: solid $white;
+                        border-width: 0 .1875rem .1875rem 0;
+                        transform: rotate(45deg);
+                    }
+
+                    .checkbox-span {
+                        text-decoration: underline;
+                        text-decoration-color: $grey-35;
+                        text-underline-offset: .1875rem;
+                    }
+                }
+            }
+
+            .auth-btn {
+                width: 100%;
+                @include text-small;
+                font-weight: 500;
+                line-height: $line-height;
+                color: $white;
+
+                padding: 1.125rem 1.25rem;
+                background-color: $orange-50;
+                border: 0;
+                border-radius: $radius-8;
+                transition: background-color 0.3s;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $orange-70;
+                }
+            }
+
+            .auth-alt {
+                position: relative;
+                margin-top: 1.875rem;
+                border-top: .0625rem solid $white-90;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+
+                .auth-or {
+                    position: relative;
+                    top: -0.8125rem;
+                    background-color: $white;
+                    padding: 0 .75rem;
+                    @include text-base;
+                    color: $grey-60;
+                }
+
+                .auth-google {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: .875rem;
+                    margin: 1.875rem 0;
+                    width: 100%;
+                    background-color: $white-97;
+                    border: .0625rem solid $white-95;
+                    border-radius: $radius-8;
+                    padding: 1.25rem 1.5rem;
+                    text-decoration: none;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: $white-99;
+                    }
+
+                    .auth-google-span {
+                        @include text-small;
+                        font-weight: 500;
+                        line-height: $line-height;
+                        color: $grey-15;
+                    }
+                }
+
+                .auth-login {
+                    display: flex;
+                    gap: .375rem;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+
+                    .auth-login-span {
+                        @include text-base;
+                        color: $grey-15;
+                    }
+
+                    .auth-login-highlight {
+                        font-weight: 500;
+                        text-decoration: underline;
+                        text-underline-offset: .1875rem;
+                    }
+
+                    .auth-login-svg {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        color: $grey-15;
+                    }
+                }
+            } 
         }
     }
 }

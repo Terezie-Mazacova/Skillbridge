@@ -97,6 +97,70 @@
 }
 
 
+// == BREAKPOINTY ==
+@media screen and (max-width: 480px) {
+    // == SLIDER - SIGN UP AND LOGIN ==
+    .testimonial {
+        .testimonial-footer {
+            flex-direction: column;
+            gap: 1.5625rem;
+
+            .testimonial-user {
+                flex-direction: column;
+                gap: .5rem;
+            }
+
+            .btn-readmore {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    // == SLIDER - SIGN UP AND LOGIN ==
+    .testimonial {
+        .testimonial-footer {
+            .btn-readmore {
+                padding: .875rem 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    // == SLIDER - SIGN UP AND LOGIN ==
+    .testimonial {
+        .quote {
+            padding: 1.875rem;
+        }
+
+        .testimonial-footer {
+            padding: 1.25rem 1.875rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    // == SLIDER - SIGN UP AND LOGIN ==
+    .testimonial {
+        .quote {
+            padding: 2.5rem;
+        }
+
+        .testimonial-footer {
+            padding: 1.5rem 2.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    // == SLIDER - SIGN UP AND LOGIN ==
+    .splide__arrow--prev {
+        left: 1rem;
+    }
+}
 
 @media screen and (min-width: 1440px) {
     // == SLIDER - MAIN PAGE ==

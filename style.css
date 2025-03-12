@@ -580,6 +580,46 @@
   left: 84%;
 }
 
+@media screen and (max-width: 480px) {
+  .testimonial .testimonial-footer {
+    flex-direction: column;
+    gap: 1.5625rem;
+  }
+  .testimonial .testimonial-footer .testimonial-user {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .testimonial .testimonial-footer .btn-readmore {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .testimonial .testimonial-footer .btn-readmore {
+    padding: 0.875rem 1rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .testimonial .quote {
+    padding: 1.875rem;
+  }
+  .testimonial .testimonial-footer {
+    padding: 1.25rem 1.875rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .testimonial .quote {
+    padding: 2.5rem;
+  }
+  .testimonial .testimonial-footer {
+    padding: 1.5rem 2.5rem;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .splide__arrow--prev {
+    left: 1rem;
+  }
+}
 @media screen and (min-width: 1440px) {
   .logos-slider {
     display: none;
@@ -1547,7 +1587,7 @@
 }
 @media (max-width: 767px) {
   .courses-subpage-list .course-subpage-card .course-subpage-curriculum .subpage-curriculum-list .subpage-curriculum-item .curriculum-step {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 .courses-subpage-list .course-subpage-card .course-subpage-curriculum .subpage-curriculum-list .subpage-curriculum-item .curriculum-topic {
@@ -2377,6 +2417,11 @@
   color: #262626;
   margin-bottom: 0.375rem;
 }
+@media (max-width: 1023px) {
+  .auth-section .auth-info .auth-header h2 {
+    font-size: 1.75rem;
+  }
+}
 .auth-section .auth-info .auth-header p {
   font-size: 1.125rem;
   font-weight: 400;
@@ -2482,6 +2527,9 @@
     font-size: 0.875rem;
   }
 }
+.auth-section .auth-form-container .auth-form .auth-fields .auth-checkbox {
+  display: flex;
+}
 .auth-section .auth-form-container .auth-form .auth-fields .auth-checkbox label {
   font-size: 1.125rem;
   font-weight: 400;
@@ -2583,7 +2631,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.875rem;
-  margin: 1.875rem 0;
+  margin-bottom: 1.875rem;
   width: 100%;
   background-color: #F7F7F8;
   border: 0.0625rem solid #F1F1F3;
@@ -2636,6 +2684,92 @@
   color: #262626;
 }
 
+@media screen and (max-width: 767px) {
+  .auth-section .auth-info .auth-header h2 {
+    margin-bottom: 0.25rem;
+  }
+  .auth-section .auth-form-container .auth-main-header h1 {
+    margin-bottom: 0.25rem;
+  }
+  .auth-section .auth-form-container .auth-form .auth-btn {
+    padding: 0.875rem 1.25rem;
+  }
+  .auth-section .auth-form-container .auth-form .auth-alt .auth-or {
+    top: -0.6875rem;
+  }
+  .auth-section .auth-form-container .auth-form .auth-alt .auth-google {
+    padding: 1rem 1.5rem;
+  }
+  .auth-section .auth-form-container .auth-form .auth-alt .auth-google img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .auth-section .auth-form-container .auth-form .auth-alt .auth-login .auth-login-svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .auth-section {
+    margin: 3.125rem 0 7.75rem 0;
+    gap: 3.125rem;
+  }
+  .auth-section .auth-info .auth-header {
+    margin-bottom: 2.5rem;
+  }
+  .auth-section .auth-form-container {
+    padding: 1.875rem;
+  }
+  .auth-section .auth-form-container .auth-main-header {
+    margin-bottom: 1.875rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .auth-section {
+    margin: 5rem 0 6.25rem 0;
+    gap: 5rem;
+  }
+  .auth-section .auth-info .auth-header {
+    margin-bottom: 3.75rem;
+  }
+  .auth-section .auth-form-container {
+    padding: 2.5rem;
+  }
+  .auth-section .auth-form-container .auth-main-header {
+    margin-bottom: 2.5rem;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .auth-section {
+    flex-direction: column-reverse;
+  }
+  .auth-section .auth-info {
+    width: 100%;
+  }
+  .auth-section .auth-form-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .auth-section .auth-form-container .auth-form .auth-fields {
+    margin-bottom: 1.25rem;
+  }
+  .auth-section .auth-form-container .auth-form .auth-fields .auth-field {
+    margin-bottom: 1.25rem;
+  }
+  .auth-section .auth-form-container .auth-form .auth-fields .auth-field label {
+    margin-bottom: 0.625rem;
+  }
+  .auth-section .auth-form-container .auth-form .auth-fields .auth-field input {
+    padding: 1.25rem;
+  }
+  .auth-section .auth-form-container .auth-form .auth-alt {
+    margin-top: 1.5rem;
+  }
+  .auth-section .auth-form-container .auth-form .auth-alt .auth-google {
+    margin-bottom: 1.5rem;
+  }
+}
 *, *::before, *::after {
   padding: 0;
   margin: 0;

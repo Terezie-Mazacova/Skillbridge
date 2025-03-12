@@ -60,8 +60,6 @@
                     flex-direction: column;
                     margin-bottom: 1.5rem;
 
-                    
-
                     label {
                         @include text-small;
                         font-weight: 500;
@@ -91,6 +89,8 @@
                 }
 
                 .auth-checkbox {
+                    display: flex;
+
                     label {
                         @include text-base;
                     }
@@ -186,7 +186,7 @@
                     align-items: center;
                     justify-content: center;
                     gap: .875rem;
-                    margin: 1.875rem 0;
+                    margin-bottom: 1.875rem;
                     width: 100%;
                     background-color: $white-97;
                     border: .0625rem solid $white-95;
@@ -232,6 +232,143 @@
                     }
                 }
             } 
+        }
+    }
+}
+
+// == BREAKPOINTY ==
+@media screen and (max-width: 767px) {
+    .auth-section {
+        .auth-info {
+            .auth-header {
+                h2 {
+                    margin-bottom: .25rem;
+                }
+            }
+        }
+
+        .auth-form-container {
+            .auth-main-header {
+                h1 {
+                    margin-bottom: .25rem;
+                }
+            }
+
+            .auth-form {
+                .auth-btn {
+                    padding: .875rem 1.25rem;
+                }
+
+                .auth-alt {
+                    .auth-or {
+                        top: -0.6875rem;
+                    }
+
+                    .auth-google {
+                        padding: 1rem 1.5rem;
+
+                        img {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                        }
+                    }
+
+                    .auth-login {
+                        .auth-login-svg {
+                            width: 1.25rem;
+                            height: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .auth-section {
+        margin: 3.125rem 0 7.75rem 0;
+        gap: 3.125rem;
+
+        .auth-info {
+            .auth-header {
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        .auth-form-container {
+            padding: 1.875rem;
+
+            .auth-main-header {
+                margin-bottom: 1.875rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .auth-section {
+        margin: 5rem 0 6.25rem 0;
+        gap: 5rem;
+
+        .auth-info {
+            .auth-header {
+                margin-bottom: 3.75rem;
+            }
+        }
+
+        .auth-form-container {
+            padding: 2.5rem;
+
+            .auth-main-header {
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .auth-section {
+        flex-direction: column-reverse;
+
+        .auth-info {
+            width: 100%;
+        }
+
+        .auth-form-container {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .auth-section {
+        .auth-form-container {
+            .auth-form {
+                .auth-fields {
+                    margin-bottom: 1.25rem;
+
+                    .auth-field {
+                        margin-bottom: 1.25rem;
+
+                        label {
+                            margin-bottom: .625rem;
+                        }
+
+                        input {
+                            padding: 1.25rem;
+                        }
+                    }
+                }
+
+                .auth-alt {
+                    margin-top: 1.5rem;
+
+                    .auth-google {
+                        margin-bottom: 1.5rem;
+                    }
+                }
+            }
         }
     }
 }

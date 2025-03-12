@@ -56,17 +56,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
         //interval: 2000,
         //speed: 900,
         arrows: true,
-        pagination: false,
-        breakpoints: {
-            600: {
-                perPage: 2,
-                gap: '1rem',
-            },
-            480: {
-                perPage: 1,
-                gap: '1rem',
-            },
-        },
+        pagination: false
     });
     splide2.mount();
 } );

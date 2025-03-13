@@ -86,6 +86,15 @@
                         @include text-base;
                         color: $grey-40;
                     }
+
+                    // == ONLY IN SUBPAGE LOGIN ==
+                    .auth-forgot {
+                        @include text-base;
+                        color: $grey-30;
+                        text-decoration: none;
+                        text-align: right;
+                        margin-top: .875rem;
+                    }
                 }
 
                 .auth-checkbox {
@@ -357,6 +366,11 @@
 
                         input {
                             padding: 1.25rem;
+                        }
+
+                        // == ONLY IN SUBPAGE LOGIN ==
+                        .auth-forgot {
+                            margin-top: .625rem;
                         }
                     }
                 }

@@ -2527,6 +2527,21 @@
     font-size: 0.875rem;
   }
 }
+.auth-section .auth-form-container .auth-form .auth-fields .auth-field .auth-forgot {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #59595A;
+  color: #4C4C4D;
+  text-decoration: none;
+  text-align: right;
+  margin-top: 0.875rem;
+}
+@media (max-width: 767px) {
+  .auth-section .auth-form-container .auth-form .auth-fields .auth-field .auth-forgot {
+    font-size: 0.875rem;
+  }
+}
 .auth-section .auth-form-container .auth-form .auth-fields .auth-checkbox {
   display: flex;
 }
@@ -2762,6 +2777,9 @@
   }
   .auth-section .auth-form-container .auth-form .auth-fields .auth-field input {
     padding: 1.25rem;
+  }
+  .auth-section .auth-form-container .auth-form .auth-fields .auth-field .auth-forgot {
+    margin-top: 0.625rem;
   }
   .auth-section .auth-form-container .auth-form .auth-alt {
     margin-top: 1.5rem;

@@ -8,7 +8,6 @@ hamburger.addEventListener('click', function() {
 });
 
 
-
 // == SLIDER - MAIN PAGE==
 /*
 document.addEventListener('DOMContentLoaded', function () {

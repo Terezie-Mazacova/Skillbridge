@@ -204,26 +204,26 @@
 }
 
 @media screen and (max-width: 400px) {
-  .announcement-bar {
-    padding: 0.875rem 1rem !important;
+  .header-content .announcement-bar {
+    padding: 0.875rem 1rem;
   }
-  .announcement-bar .promo-text {
+  .header-content .announcement-bar .promo-text {
     text-align: left;
   }
 }
 @media screen and (max-width: 767px) {
-  .nav-actions .nav-logo .laptop-logo {
+  .header-content .branding-nav .nav-actions .nav-logo .laptop-logo {
     display: none;
   }
-  .btns-container .auth-buttons__button {
-    padding: 0.75rem !important;
-    margin: 0 !important;
+  .header-content .branding-nav .btns-container .auth-buttons .auth-buttons__button {
+    padding: 0.75rem;
+    margin: 0;
   }
-  .btns-container .auth-buttons__button--login {
-    padding: 0.75rem 1.5rem !important;
+  .header-content .branding-nav .btns-container .auth-buttons .auth-buttons__button--login {
+    padding: 0.75rem 1.5rem;
   }
-  .btns-container .mobile-nav {
-    width: 100% !important;
+  .header-content .branding-nav .btns-container .mobile-nav {
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -232,27 +232,27 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .nav-logo .laptop-logo {
+  .header-content .branding-nav .nav-logo .laptop-logo {
     display: none;
   }
-  .btns-container .hamburger {
-    display: none !important;
+  .header-content .branding-nav .btns-container .hamburger {
+    display: none;
   }
-  .btns-container .mobile-nav {
-    display: none !important;
+  .header-content .branding-nav .btns-container .mobile-nav {
+    display: none;
   }
 }
 @media screen and (max-width: 1439px) {
-  .branding-nav {
-    justify-content: space-between !important;
+  .header-content .branding-nav {
+    justify-content: space-between;
   }
-  .branding-nav .nav-actions .nav-logo .desktop-logo {
+  .header-content .branding-nav .nav-actions .nav-logo .desktop-logo {
     display: none;
   }
-  .branding-nav .nav-actions .main-nav {
+  .header-content .branding-nav .nav-actions .main-nav {
     display: none;
   }
-  .branding-nav .btns-container {
+  .header-content .branding-nav .btns-container {
     gap: 1.25rem;
   }
 }

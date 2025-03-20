@@ -208,36 +208,44 @@
 
 // == BREAKPOINTY ==
 @media screen and (max-width: 400px) {
-    // == PROMO BAR ==
-    .announcement-bar {
-        padding: .875rem 1rem !important;
+    .header-content {
+        // == PROMO BAR ==
+        .announcement-bar {
+            padding: .875rem 1rem;
 
-        .promo-text {
-            text-align: left;
+            .promo-text {
+                text-align: left;
+            }
         }
     }
 }
 
 @media screen and (max-width: 767px) {
-    .nav-actions {
-        .nav-logo {
-            .laptop-logo {
-                display: none;
+    .header-content {
+        .branding-nav {
+            .nav-actions {
+                .nav-logo {
+                    .laptop-logo {
+                        display: none;
+                    }
+                }
             }
-        }
-    }
+        
+            .btns-container {
+                .auth-buttons {
+                    .auth-buttons__button {
+                        padding: .75rem;
+                        margin: 0;
+                    }
+                    .auth-buttons__button--login {
+                        padding: .75rem 1.5rem;
+                    }
+                }
 
-    .btns-container {
-        .auth-buttons__button {
-            padding: .75rem !important;
-            margin: 0 !important;
-        }
-        .auth-buttons__button--login {
-            padding: .75rem 1.5rem !important;
-        }
-
-        .mobile-nav {
-            width: 100% !important;
+                .mobile-nav {
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -249,19 +257,23 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .nav-logo {
-        .laptop-logo {
-            display: none;
-        }
-    }
-
-    .btns-container {
-        .hamburger {
-            display: none !important;
-        }
-    
-        .mobile-nav {
-            display: none !important;
+    .header-content {
+        .branding-nav {
+            .nav-logo {
+                .laptop-logo {
+                    display: none;
+                }
+            }
+        
+            .btns-container {
+                .hamburger {
+                    display: none;
+                }
+            
+                .mobile-nav {
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -269,22 +281,24 @@
 
 @media screen and (max-width: 1439px) {
     // == NAV A LOGO ==
-    .branding-nav {
-        justify-content: space-between !important;
-
-        .nav-actions {
-            .nav-logo {
-                .desktop-logo {
+    .header-content {
+        .branding-nav {
+            justify-content: space-between;
+    
+            .nav-actions {
+                .nav-logo {
+                    .desktop-logo {
+                        display: none;
+                    }
+                }
+                .main-nav {
                     display: none;
                 }
             }
-            .main-nav {
-                display: none;
+    
+            .btns-container {
+                gap: 1.25rem;
             }
-        }
-
-        .btns-container {
-            gap: 1.25rem;
         }
     }
 }

@@ -413,63 +413,91 @@ body {
 // == BREAKPOINTY ==
 @media screen and (max-width: 400px) {
     // == OUR PRICING SECTION ==
-    .feature-content {
-        align-items: flex-start !important;
+    .section-pricing {
+        .pricing-tabs {
+            .tabs-content {
+                .plans-wrapper {
+                    .plan-card {
+                        .plan-features {
+                            .feature-item {
+                                .feature-content {
+                                    align-items: flex-start;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 767px) {
     // == OUR PRICING SECTION ==
-    .header-pricing {
-        h2 {
-            margin-bottom: .25rem !important;
+    .section-pricing {
+        .header-pricing {
+            h2 {
+                margin-bottom: .25rem;
+            }
         }
-    }
 
-    .tab {
-        padding: .75rem 1.5rem !important;
-    }
+        .pricing-tabs {
+            .tabs-list {
+                .tab {
+                    padding: .75rem 1.5rem;
+                }
+            }
 
-    .plan-btn {
-        padding: 1.125rem 1.5rem !important;
+            .tabs-content {
+                .plans-wrapper {
+                    .plan-card {
+                        .plan-btn {
+                            padding: 1.125rem 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // == FAQ SECTION ==
-    .header-faq {
-        h2 {
-            margin-bottom: .25rem !important;
+    .section-faq {
+        .header-faq {
+            h2 {
+                margin-bottom: .25rem;
+            }
         }
-    }
 
-    .faq-container {
-        .faq-item {
-            .faq-question {
-                .faq-toggle {
-                    padding: .625rem !important;
-        
-                    .faq-toggle-plus {
-                        width: 1.25rem !important;
-                        height: 1.25rem !important;
+        .faq-container {
+            .faq-item {
+                .faq-question {
+                    .faq-toggle {
+                        padding: .625rem;
+            
+                        .faq-toggle-plus {
+                            width: 1.25rem;
+                            height: 1.25rem;
+                        }
                     }
                 }
-            }
-
-            .faq-link {
-                .faq-link-icon {
-                    padding: .625rem !important;
-
-                    .faq-link-icon-svg {
-                        width: 1.25rem !important;
-                        height: 1.25rem !important;
+    
+                .faq-link {
+                    .faq-link-icon {
+                        padding: .625rem;
+    
+                        .faq-link-icon-svg {
+                            width: 1.25rem;
+                            height: 1.25rem;
+                        }
                     }
                 }
-            }
-
-            &.active {
-                .faq-toggle {
-                    .faq-toggle-close {
-                        width: 1.25rem !important;
-                        height: 1.25rem !important;
+    
+                &.active {
+                    .faq-toggle {
+                        .faq-toggle-close {
+                            width: 1.25rem;
+                            height: 1.25rem;
+                        }
                     }
                 }
             }
@@ -492,34 +520,38 @@ body {
             gap: 2.5rem;
         }
 
-        .tabs-content {
-            padding: 1.25rem !important;
-
-            .plans-wrapper {
-                flex-direction: column;
-        
-                .plan-card {
-                    width: 100% !important;
-                    padding: 1.875rem 1.25rem 1.25rem 1.25rem !important;
-
-                    .plan-header {
-                        padding: .5rem 1.375rem !important;
-                        margin-bottom: 1.875rem !important;
-                    }
+        .pricing-tabs {
+            .tabs-content {
+                padding: 1.25rem;
     
-                    .plan-price {
-                        margin-bottom: 1.875rem !important;
-                    }
+                .plans-wrapper {
+                    flex-direction: column;
+            
+                    .plan-card {
+                        width: 100%;
+                        padding: 1.875rem 1.25rem 1.25rem 1.25rem;
     
-                    .plan-features {
-                        padding: 1.25rem !important;
-    
-                        .features-heading {
-                            margin-bottom: 1.25rem !important;
+                        .plan-header {
+                            padding: .5rem 1.375rem;
+                            margin-bottom: 1.875rem;
                         }
-    
-                        .feature-content {
-                            padding: .75rem !important;
+        
+                        .plan-price {
+                            margin-bottom: 1.875rem;
+                        }
+        
+                        .plan-features {
+                            padding: 1.25rem;
+        
+                            .features-heading {
+                                margin-bottom: 1.25rem;
+                            }
+        
+                            .feature-item {
+                                .feature-content {
+                                    padding: .75rem;
+                                }
+                            }
                         }
                     }
                 }
@@ -535,7 +567,7 @@ body {
 
         .header-faq {
             p {
-                margin-bottom: 1.25rem !important;
+                margin-bottom: 1.25rem;
             }
         }
 
@@ -544,9 +576,12 @@ body {
                 padding: 1.25rem 1.5rem;
                 margin-bottom: 1.25rem;
 
-                .faq-text {
-                    padding-top: 1.25rem !important;
+                &.active {
+                    .faq-text {
+                        padding-top: 1.25rem;
+                    }
                 }
+                
 
                 .faq-link {
                     margin-top: 1.25rem;
@@ -566,14 +601,18 @@ body {
             margin-bottom: 3.75rem;
         }
 
-        .tabs-content {
-            padding: 3.125rem !important;
-
-            .plan-card {
-                padding: 2.5rem 1.5rem 1.5rem 1.5rem !important;
-
-                .plan-features {
-                    padding: 1.875rem !important;
+        .pricing-tabs {
+            .tabs-content {
+                padding: 3.125rem;
+    
+                .plans-wrapper {
+                    .plan-card {
+                        padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+        
+                        .plan-features {
+                            padding: 1.875rem;
+                        }
+                    }
                 }
             }
         }
@@ -588,7 +627,7 @@ body {
 
         .header-faq {
             p {
-                margin-bottom: 2.5rem !important;
+                margin-bottom: 2.5rem;
             }
         }
 
@@ -597,10 +636,12 @@ body {
                 padding: 1.5rem 2.5rem;
                 margin-bottom: 1.25rem;
 
-                .faq-text {
-                    padding-top: 2.5rem !important;
+                &.active {
+                    .faq-text {
+                        padding-top: 2.5rem;
+                    }
                 }
-
+                
                 .faq-link {
                     margin-top: 2.5rem;
                     padding: 1rem 1.5rem;
@@ -613,14 +654,16 @@ body {
 
 @media screen and (max-width: 1279px) {
     // == OUR PRICING SECTION ==
-    .pricing-tabs {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2.5rem;
-
-        .tabs-list {
-            position: unset !important;
+    .section-pricing {
+        .pricing-tabs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.5rem;
+    
+            .tabs-list {
+                position: unset;
+            }
         }
     }
 
@@ -639,10 +682,14 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
-    .faq-item {
-        &.active {
-            .faq-question {
-                padding-bottom: 1.25rem !important;
+    .section-faq {
+        .faq-container {
+            .faq-item {
+                &.active {
+                    .faq-question {
+                        padding-bottom: 1.25rem;
+                    }
+                }
             }
         }
     }

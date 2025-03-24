@@ -1830,9 +1830,9 @@
 }
 
 @media screen and (max-width: 767px) {
-  .course-lesson {
+  .course-section .course-content .course-detail-card .course-detail-info .course-lesson {
     flex-direction: column;
-    align-items: flex-start !important;
+    align-items: flex-start;
     gap: 1.5rem;
   }
 }
@@ -1844,7 +1844,7 @@
     margin-bottom: 3.125rem;
   }
   .course-section .course-content {
-    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-columns: repeat(1, 1fr);
   }
   .course-section .course-content .course-detail-card {
     padding: 1.875rem;
@@ -1874,20 +1874,17 @@
   }
 }
 @media screen and (max-width: 1440px) {
-  .course-content {
-    gap: 1.25rem !important;
+  .course-section .course-content {
+    gap: 1.25rem;
   }
-  .course-content .course-lesson {
-    margin-bottom: 1rem !important;
+  .course-section .course-content .course-detail-card .course-detail-info .course-lesson {
+    margin-bottom: 1rem;
   }
-  .course-content .course-lesson:last-child {
-    margin-bottom: 0 !important;
+  .course-section .course-content .course-detail-card .course-detail-info .course-lesson .course-lesson-text .course-lesson-title {
+    margin-bottom: 0.125rem;
   }
-  .course-content .course-lesson .course-lesson-title {
-    margin-bottom: 0.125rem !important;
-  }
-  .course-content .course-lesson .course-detail-duration {
-    padding: 0.625rem !important;
+  .course-section .course-content .course-detail-card .course-detail-info .course-lesson .course-detail-duration {
+    padding: 0.625rem;
   }
 }
 .info-section {

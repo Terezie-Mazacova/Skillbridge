@@ -100,10 +100,18 @@
 // BREAKPOINTY ==
 @media screen and (max-width: 767px) {
     // == COURSES DETAIL == 
-    .course-lesson {
-        flex-direction: column;
-        align-items: flex-start !important;
-        gap: 1.5rem;
+    .course-section {
+        .course-content {
+            .course-detail-card {
+                .course-detail-info {
+                    .course-lesson {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 1.5rem;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -117,7 +125,7 @@
         }
 
         .course-content {
-            grid-template-columns: repeat(1, 1fr) !important;
+            grid-template-columns: repeat(1, 1fr);
 
             .course-detail-card {
                 padding: 1.875rem;
@@ -166,22 +174,26 @@
 
 @media screen and (max-width: 1440px) {
     // == COURSES DETAIL == 
-    .course-content {
-        gap: 1.25rem !important;
+    .course-section {
+        .course-content {
+            gap: 1.25rem;
+    
+            .course-detail-card {
+                .course-detail-info {
+                    .course-lesson {
+                        margin-bottom: 1rem;
 
-        .course-lesson {
-            margin-bottom: 1rem !important;
-    
-            &:last-child {
-                margin-bottom: 0 !important;
-            }
-    
-            .course-lesson-title {
-                margin-bottom: .125rem !important;
-            }
-    
-            .course-detail-duration {
-                padding: .625rem !important;
+                        .course-lesson-text {
+                            .course-lesson-title {
+                                margin-bottom: .125rem;
+                            }
+                        }
+
+                        .course-detail-duration {
+                            padding: .625rem;
+                        }
+                    }
+                }
             }
         }
     }

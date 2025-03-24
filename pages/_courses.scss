@@ -155,49 +155,61 @@
 // == BREAKPOINTY ==
 @media screen and (max-width: 480px) {
     // == COURSE LISTING SECTION ==
-    .course-meta {
-        flex-direction: column;
-        align-items: flex-start !important;
-        gap: 1rem;
+    .courses-subpage-list {
+        .course-subpage-card {
+            .course-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 767px) {
     // == COURSE LISTING SECTION ==
-    .course-subpage-header {
-        flex-direction: column;
-        align-items: flex-start !important;
-        gap: 1.25rem !important;
-
-        .course-subpage-info {
-            h2 {
-                margin-bottom: .25rem !important;
-            }
-        }
-    }
-
-    .course-duration-level {
-        span {
-            padding: .5rem .75rem !important;
-        }
-    }
-
-    .subpage-curriculum-list {
-        flex-direction: column;
-
-        .subpage-curriculum-item {
-            border-right: 0 !important;
-            border-bottom: 0.0625rem solid $white-95;
-            padding-top: 1.25rem !important;
-            padding-bottom: 1.25rem !important;
-
-            &:last-child {
-                border-bottom: 0;
-                padding-bottom: 0 !important;
+    .courses-subpage-list {
+        .course-subpage-card {
+            .course-subpage-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.25rem;
+        
+                .course-subpage-info {
+                    h2 {
+                        margin-bottom: .25rem;
+                    }
+                }
             }
 
-            &:first-child {
-                padding-top: 0 !important;
+            .course-meta {
+                .course-duration-level {
+                    span {
+                        padding: .5rem .75rem;
+                    }
+                }
+            }
+
+            .course-subpage-curriculum {
+                .subpage-curriculum-list {
+                    flex-direction: column;
+            
+                    .subpage-curriculum-item {
+                        border-right: 0;
+                        border-bottom: 0.0625rem solid $white-95;
+                        padding-top: 1.25rem;
+                        padding-bottom: 1.25rem;
+            
+                        &:last-child {
+                            border-bottom: 0;
+                            padding-bottom: 0;
+                        }
+            
+                        &:first-child {
+                            padding-top: 0;
+                        }
+                    }
+                }
             }
         }
     }
@@ -225,24 +237,22 @@
         margin-bottom: 3.125rem;
 
         .course-subpage-card {
-            padding: 1.5rem !important;
-            margin-bottom: 1.25rem !important;
-    
-            &:last-child {
-                margin-bottom: 0 !important;
-            }
-    
+            padding: 1.5rem;
+            margin-bottom: 1.25rem;
+            
             .course-subpage-images {
-                gap: .625rem !important;
+                gap: .625rem;
             }
     
-            .curriculum-title {
-                padding: .875rem 1.25rem !important;
-            }
-    
-            .subpage-curriculum-item {
-                padding-left: 1.5rem !important;
-                padding-right: 1.5rem !important;
+            .course-subpage-curriculum {
+                .curriculum-title {
+                    padding: .875rem 1.25rem;
+                }
+        
+                .subpage-curriculum-item {
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                }
             }
         }
     }
@@ -250,15 +260,22 @@
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
     // == COURSE LISTING SECTION ==
-    .subpage-curriculum-list {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 1.875rem;
-
-        .subpage-curriculum-item {
-            border-right: 0 !important;
+    .courses-subpage-list {
+        .course-subpage-card {
+            .course-subpage-curriculum {
+                .subpage-curriculum-list {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 1.875rem;
+            
+                    .subpage-curriculum-item {
+                        border-right: 0;
+                    }
+                }
+            }
         }
     }
+    
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -274,20 +291,20 @@
         margin-bottom: 6.25rem;
 
         .course-subpage-card {
-            padding: 2.5rem !important;
-            margin-bottom: 2.5rem !important;
-    
-            &:last-child {
-                margin-bottom: 0 !important;
-            }
-    
-            .curriculum-title {
-                padding: 1.25rem 1.5rem !important;
-            }
-    
-            .subpage-curriculum-item {
-                padding-left: 2.5rem !important;
-                padding-right: 2.5rem !important;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            
+            .course-subpage-curriculum {
+                .curriculum-title {
+                    padding: 1.25rem 1.5rem;
+                }
+
+                .subpage-curriculum-list {
+                    .subpage-curriculum-item {
+                        padding-left: 2.5rem;
+                        padding-right: 2.5rem;
+                    }
+                }
             }
         }
     }
@@ -296,19 +313,25 @@
 
 @media screen and (max-width: 1440px) {
     // == COURSE LISTING SECTION ==
-    .course-subpage-header {
-        margin-bottom: 1.5rem !important;
-    }
+    .courses-subpage-list {
+        .course-subpage-card {
+            .course-subpage-header {
+                margin-bottom: 1.5rem;
+            }
 
-    .course-subpage-images {
-        margin-bottom: 1.5rem !important;
-    }
+            .course-subpage-images {
+                margin-bottom: 1.5rem;
+            }
 
-    .course-meta {
-        margin-bottom: 2.5rem !important;
-    }
+            .course-meta {
+                margin-bottom: 2.5rem;
+            }
 
-    .subpage-curriculum-list {
-        padding: 1.5rem 0 !important;
+            .course-subpage-curriculum {
+                .subpage-curriculum-list {
+                    padding: 1.5rem 0;
+                }
+            }
+        }
     }
 }

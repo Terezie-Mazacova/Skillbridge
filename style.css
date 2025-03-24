@@ -1603,39 +1603,39 @@
 }
 
 @media screen and (max-width: 480px) {
-  .course-meta {
+  .courses-subpage-list .course-subpage-card .course-meta {
     flex-direction: column;
-    align-items: flex-start !important;
+    align-items: flex-start;
     gap: 1rem;
   }
 }
 @media screen and (max-width: 767px) {
-  .course-subpage-header {
+  .courses-subpage-list .course-subpage-card .course-subpage-header {
     flex-direction: column;
-    align-items: flex-start !important;
-    gap: 1.25rem !important;
+    align-items: flex-start;
+    gap: 1.25rem;
   }
-  .course-subpage-header .course-subpage-info h2 {
-    margin-bottom: 0.25rem !important;
+  .courses-subpage-list .course-subpage-card .course-subpage-header .course-subpage-info h2 {
+    margin-bottom: 0.25rem;
   }
-  .course-duration-level span {
-    padding: 0.5rem 0.75rem !important;
+  .courses-subpage-list .course-subpage-card .course-meta .course-duration-level span {
+    padding: 0.5rem 0.75rem;
   }
-  .subpage-curriculum-list {
+  .courses-subpage-list .course-subpage-card .course-subpage-curriculum .subpage-curriculum-list {
     flex-direction: column;
   }
-  .subpage-curriculum-list .subpage-curriculum-item {
-    border-right: 0 !important;
+  .courses-subpage-list .course-subpage-card .course-subpage-curriculum .subpage-curriculum-list .subpage-curriculum-item {
+    border-right: 0;
     border-bottom: 0.0625rem solid #F1F1F3;
-    padding-top: 1.25rem !important;
-    padding-bottom: 1.25rem !important;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
-  .subpage-curriculum-list .subpage-curriculum-item:last-child {
+  .courses-subpage-list .course-subpage-card .course-subpage-curriculum .subpage-curriculum-list .subpage-curriculum-item:last-child {
     border-bottom: 0;
-    padding-bottom: 0 !important;
+    padding-bottom: 0;
   }
-  .subpage-curriculum-list .subpage-curriculum-item:first-child {
-    padding-top: 0 !important;
+  .courses-subpage-list .course-subpage-card .course-subpage-curriculum .subpage-curriculum-list .subpage-curriculum-item:first-child {
+    padding-top: 0;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -1655,31 +1655,28 @@
     margin-bottom: 3.125rem;
   }
   .courses-subpage-list .course-subpage-card {
-    padding: 1.5rem !important;
-    margin-bottom: 1.25rem !important;
-  }
-  .courses-subpage-list .course-subpage-card:last-child {
-    margin-bottom: 0 !important;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
   }
   .courses-subpage-list .course-subpage-card .course-subpage-images {
-    gap: 0.625rem !important;
+    gap: 0.625rem;
   }
-  .courses-subpage-list .course-subpage-card .curriculum-title {
-    padding: 0.875rem 1.25rem !important;
+  .courses-subpage-list .course-subpage-card .course-subpage-curriculum .curriculum-title {
+    padding: 0.875rem 1.25rem;
   }
-  .courses-subpage-list .course-subpage-card .subpage-curriculum-item {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
+  .courses-subpage-list .course-subpage-card .course-subpage-curriculum .subpage-curriculum-item {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) {
-  .subpage-curriculum-list {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+  .courses-subpage-list .course-subpage-card .course-subpage-curriculum .subpage-curriculum-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.875rem;
   }
-  .subpage-curriculum-list .subpage-curriculum-item {
-    border-right: 0 !important;
+  .courses-subpage-list .course-subpage-card .course-subpage-curriculum .subpage-curriculum-list .subpage-curriculum-item {
+    border-right: 0;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -1692,32 +1689,29 @@
     margin-bottom: 6.25rem;
   }
   .courses-subpage-list .course-subpage-card {
-    padding: 2.5rem !important;
-    margin-bottom: 2.5rem !important;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
   }
-  .courses-subpage-list .course-subpage-card:last-child {
-    margin-bottom: 0 !important;
+  .courses-subpage-list .course-subpage-card .course-subpage-curriculum .curriculum-title {
+    padding: 1.25rem 1.5rem;
   }
-  .courses-subpage-list .course-subpage-card .curriculum-title {
-    padding: 1.25rem 1.5rem !important;
-  }
-  .courses-subpage-list .course-subpage-card .subpage-curriculum-item {
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
+  .courses-subpage-list .course-subpage-card .course-subpage-curriculum .subpage-curriculum-list .subpage-curriculum-item {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 @media screen and (max-width: 1440px) {
-  .course-subpage-header {
-    margin-bottom: 1.5rem !important;
+  .courses-subpage-list .course-subpage-card .course-subpage-header {
+    margin-bottom: 1.5rem;
   }
-  .course-subpage-images {
-    margin-bottom: 1.5rem !important;
+  .courses-subpage-list .course-subpage-card .course-subpage-images {
+    margin-bottom: 1.5rem;
   }
-  .course-meta {
-    margin-bottom: 2.5rem !important;
+  .courses-subpage-list .course-subpage-card .course-meta {
+    margin-bottom: 2.5rem;
   }
-  .subpage-curriculum-list {
-    padding: 1.5rem 0 !important;
+  .courses-subpage-list .course-subpage-card .course-subpage-curriculum .subpage-curriculum-list {
+    padding: 1.5rem 0;
   }
 }
 .course-section {

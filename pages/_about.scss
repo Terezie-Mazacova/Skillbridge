@@ -118,18 +118,20 @@
 // == BREAKPOINTY ==
 @media screen and (max-width: 767px) {
     // == INFO SECTION ==
-    .info-header {
-        h2 {
-            margin-bottom: .25rem !important;
+    .info-section {
+        .info-header {
+            h2 {
+                margin-bottom: .25rem;
+            }
         }
-    }
 
-    .info-cards {
-        grid-template-columns: repeat(1, 1fr) !important;
-
-        .info-card {
-            .info-icon {
-                padding: .875rem !important;
+        .info-cards {
+            grid-template-columns: repeat(1, 1fr);
+    
+            .info-card {
+                .info-icon {
+                    padding: .875rem;
+                }
             }
         }
     }
@@ -144,11 +146,13 @@
             margin-bottom: 3.125rem;
         }
 
-        .info-card {
-            padding: 1.875rem !important;
-
-            .info-card-title {
-                margin-bottom: .375rem !important;
+        .info-cards {
+            .info-card {
+                padding: 1.875rem;
+    
+                .info-card-title {
+                    margin-bottom: .375rem;
+                }
             }
         }
 
@@ -163,7 +167,7 @@
                 margin-bottom: 2.5rem;
 
                 .info-cta-heading {
-                    margin-bottom: .625rem !important;
+                    margin-bottom: .625rem;
                 }
             }
 
@@ -187,33 +191,43 @@
             margin-bottom: 3.75rem;
         }
 
-        .info-card {
-            padding: 2.5rem !important;
-
-            .info-card-title {
-                margin-bottom: .625rem !important;
+        .info-cards {
+            .info-card {
+                padding: 2.5rem;
+    
+                .info-card-title {
+                    margin-bottom: .625rem;
+                }
             }
         }
+        
 
         // == CTA ==
         .info-cta {
             padding: 3.75rem;
             margin-top: 3.75rem;
 
-            .info-cta-heading {
-                margin-bottom: .875rem !important;
+            .info-cta-text {
+                .info-cta-heading {
+                    margin-bottom: .875rem;
+                }
             }
+            
         }
     }
 }
 
 @media screen and (max-width: 1440px) {
     // == INFO SECTION ==
-    .info-cards {
-        gap: 1.25rem !important;
-
-        .info-icon {
-            margin-bottom: 1.5rem !important;
+    .info-section {
+        .info-cards {
+            gap: 1.25rem;
+    
+            .info-card {
+                .info-icon {
+                    margin-bottom: 1.5rem;
+                }
+            }
         }
     }
 }
